@@ -1,0 +1,26 @@
+[
+  {
+    "src":"images/home1.jpg",
+    "title":"家居美图",
+    "text":"美图千千万总有适合你的",
+    "href":""
+  },
+  {
+    "src":"images/home2.jpg",
+    "title":"家居图册",
+    "text":"看家具图册 装温馨小家",
+    "href":""
+  },
+  {
+    "src":"images/home3.jpg",
+    "title":"精品专题",
+    "text":"专治审美疲劳",
+    "href":""
+  },
+  {
+    "src":"images/home4.png",
+    "title":"3D云设计",
+    "text":"一言不合就成“设计大咖”",
+    "href":""
+  }
+]

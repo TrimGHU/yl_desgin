@@ -1,0 +1,26 @@
+[
+  {
+    "src":"images/B_舒适休闲北欧/1.jpg",
+    "title":"超惠包",
+    "num":699,
+    "href":"#/details?title=super"
+  },
+  {
+    "src":"images/B_舒适休闲北欧/2.jpg",
+    "title":"精致包",
+    "num":799,
+    "href":"#/details?title=delicate"
+  },
+  {
+    "src":"images/B_舒适休闲北欧/3.jpg",
+    "title":"轻奢包",
+    "num":899,
+    "href":""
+  },
+  {
+    "src":"images/B_舒适休闲北欧/4.jpg",
+    "title":"豪华包",
+    "num":1299,
+    "href":""
+  }
+]

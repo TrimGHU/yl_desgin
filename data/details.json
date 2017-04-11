@@ -1,0 +1,193 @@
+{
+  "super":{
+    "mu":{
+      "muSrc":"images/icon_package1.png",
+      "muName":"木门",
+      "muDes":"699超惠升级包中包含室内木门",
+      "muChoose":"木门(2选1)：",
+      "muList":[
+        {
+          "src":"images/mu1_1.jpg",
+          "title":"喜达屋",
+          "type":"型号：BR-553",
+          "standard":"规格：900*2100",
+          "describe":"描述：纳米烤漆"
+        },
+        {
+          "src":"images/mu1_2.jpg",
+          "title":"喜达屋",
+          "type":"型号：BR-377",
+          "standard":"规格：900*2100",
+          "describe":"描述：纳米烤漆"
+        }
+      ]
+    },
+    "di":{
+      "muSrc":"images/icon_package2.png",
+      "muName":"地板",
+      "muDes":"699超惠升级包中包含室内地板",
+      "muChoose":"地板(4选1)：",
+      "muList":[
+        {
+          "src":"images/di1_1.jpg",
+          "title":"法恩莎节水坐便器",
+          "type":"型号：FB1698M/L",
+          "standard":"规格：L685*W380*H705",
+          "describe":"描述：喷射虹吸、高温自洁釉"
+        },
+        {
+          "src":"images/di1_2.jpg",
+          "title":"贝尔强化地板",
+          "type":"型号：WL4003",
+          "standard":"规格：1215*166*7P",
+          "describe":"描述：单位平方米"
+        },
+        {
+          "src": "images/di1_3.jpg",
+          "title": "贝尔强化地板",
+          "type": "型号：WL2007",
+          "standard": "规格：1215*166*7P",
+          "describe": "描述：单位平方米"
+        },
+        {
+          "src": "images/di1_4.jpg",
+          "title": "贝尔强化地板",
+          "type": "型号：WL2020",
+          "standard": "规格：1215*166*7P",
+          "describe": "描述：单位平方米"
+        }
+      ]
+    },
+	"wei":{
+      "muSrc":"images/icon_package3.png",
+      "muName":"卫浴",
+      "muDes":"699中包含马桶、浴室柜、龙头、花洒及五金配件",
+      "muChoose":"马桶(3选1) : ",
+      "muList":[
+        {
+          "src":"images/wei_1.jpg",
+          "title":"法恩莎节水坐便器",
+          "type":"型号：FB1698M/L",
+          "standard":"规格：L685*W380*H705",
+          "describe":"描述：喷射虹吸、高温自洁釉"
+        },
+        {
+          "src":"images/wei_2.jpg",
+          "title":"法恩莎节水坐便器",
+          "type":"型号：FB1628",
+          "standard":"规格：L700*W375*H717",
+          "describe":"描述：喷射虹吸、高温自洁釉"
+        },
+        {
+          "src": "images/wei_3.jpg",
+          "title": "法恩莎节水坐便器",
+          "type": "型号：FB16108",
+          "standard": "规格：L700*W365*H720",
+          "describe": "描述：喷射虹吸、高温自洁釉"
+        }
+      ]
+    }
+  },
+  "delicate":{
+    "mu":{
+      "muSrc":"images/icon_package1.png",
+      "muName":"木门",
+      "muDes":"798精致升级包中包含室内木门",
+      "muChoose":"木门(3选1)：",
+      "muList":[
+        {
+          "src":"images/mu1.jpg",
+          "title":"派的木门",
+          "type":"型号：PAD001",
+          "standard":"规格：2200*900*300",
+          "describe":"描述：免漆门"
+        },
+        {
+          "src":"images/mu1.jpg",
+          "title":"派的木门",
+          "type":"型号：PBL001",
+          "standard":"规格：2200*900*300",
+          "describe":"描述：免漆门"
+        },
+        {
+          "src": "images/mu1.jpg",
+          "title": "派的木门",
+          "type": "型号：PBL003",
+          "standard": "规格：2200*900*300",
+          "describe": "描述：免漆门"
+        }
+      ]
+    },
+    "di":{
+      "muSrc":"images/icon_package2.png",
+      "muName":"地板",
+      "muDes":"798精致升级包中包含室内地板",
+      "mu-choose":"地板(9选1)：",
+      "muList":[
+        {
+          "src":"images/di1.jpg",
+          "title":"圣象e家",
+          "type":"型号：NF1301",
+          "standard":"规格：1286*194*10",
+          "describe":"描述：单位平方米"
+        },
+        {
+          "src":"images/di2.jpg",
+          "title":"圣象e家",
+          "type":"型号：NF1302",
+          "standard":"规格：1286*194*10",
+          "describe":"描述：单位平方米"
+        },
+        {
+          "src": "images/di3.jpg",
+          "title": "圣象e家",
+          "type": "型号：NF1303",
+          "standard": "规格：1286*194*10",
+          "describe": "描述：单位平方米"
+        },
+        {
+          "src": "images/di4.jpg",
+          "title": "圣象e家",
+          "type": "型号：NF1101",
+          "standard": "规格：1286*194*10",
+          "describe": "描述：单位平方米"
+        },
+        {
+          "src": "images/di5.jpg",
+          "title": "圣象e家",
+          "type": "型号：NF1102",
+          "standard": "规格：1286*194*10",
+          "describe": "描述：单位平方米"
+        },
+        {
+          "src": "images/di6.jpg",
+          "title": "圣象e家",
+          "type": "型号：NF1103",
+          "standard": "规格：1286*194*10",
+          "describe": "描述：单位平方米"
+        },
+        {
+          "src": "images/di7.jpg",
+          "title": "圣象e家",
+          "type": "型号：NF6201",
+          "standard": "规格：1286*194*10",
+          "describe": "描述：单位平方米"
+        },
+        {
+          "src": "images/di8.jpg",
+          "title": "圣象e家",
+          "type": "型号：NF6202",
+          "standard": "规格：1286*194*10",
+          "describe": "描述：单位平方米"
+        },
+        {
+          "src": "images/di9.jpg",
+          "title": "圣象e家",
+          "type": "型号：NF6203",
+          "standard": "规格：1286*194*10",
+          "describe": "描述：单位平方米"
+        }
+      ]
+    }
+  }
+}

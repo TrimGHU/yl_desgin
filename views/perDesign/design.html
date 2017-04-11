@@ -1,0 +1,50 @@
+<ion-view view-title="个性搭配" id="design">
+    <!--<div class="design-page">-->
+        <!--<p class="design-inter">互联网授信家装</p>-->
+        <!--<h2 class="design-brand">品牌主材自由配</h2>-->
+        <!--<p class="design-material">整体家装=六大主材+综合服务套餐包</p>-->
+        <!--<input type="text" placeholder="地址" class="design-address">-->
+        <!--<select class="designtype">-->
+            <!--<option value="选择小区">选择小区</option>-->
+        <!--</select>-->
+        <!--<select class="designtype">-->
+            <!--<option value="选择户型">选择户型</option>-->
+        <!--</select>-->
+        <!--<select class="designtype">-->
+            <!--<option value="选择装修方案">选择装修方案</option>-->
+        <!--</select>-->
+        <!--<input type="button" value="查看预算" class="lookBtn">-->
+    <!--</div>-->
+    <div class="design-list">
+        <p class="design-inter">互联网授信家装</p>
+        <div class="price-list">
+            <div>
+                699-1299元/m
+                <i>2</i>
+            </div>
+        </div>
+        <ul ng-init="designInitData()" class="clearfloat">
+            <li class="design-list-li" ng-repeat="data in desginData">
+                <a href="{{data.href}}">
+                    <div class="list-li-top">
+                        <img ng-src="{{data.src}}">
+                        <div class="shadow">
+                            <p class="shadow-num" ng-bind="data.num"></p>
+                            <span class="shadow-unit1">元</span>
+                            <span class="line"></span>
+                            <span class="shadow-unit2">m</span>
+                            <span class="shadow-unit3">2</span>
+                        </div>
+                    </div>
+                </a>
+                <p ng-bind="data.title" class="package-name"></p>
+            </li>
+        </ul>
+		
+		<div style="display: block;border: 1px solid #979797;padding: 5px 10px 8px 10px;margin-top: 10%;">
+			<h2 style="font-size: 20px;color: #339f2f;text-align: center;">睡到付款，先装修，后付款</h2>	
+			<p style="font-size: 12px;text-align: left;">0利息0手续费, <span>即速秒批，立刻授信中山地区百度钱包唯一合作家装公司</span>, 了解详情 &gt;</p>
+		</div>
+    </div>
+	
+</ion-view>

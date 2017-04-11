@@ -1,0 +1,360 @@
+<ion-view view-title="个性搭配详情" id="onlineCalculation">
+    <ion-content delegate-handle="myscroll">
+        <div class="onlineCalculation">
+            <div class="onlineCalculation-ul clearfloat">
+                <div class="onlineCalculation-ul-l" ng-click="onlineCalLeft()" ng-class="{disable_btn: activeDisableTab == 0}">
+                    <i class="icon ion-arrow-left-a"></i>
+                </div>
+                <div style="width: 80%;height: 104px;float: left;overflow: hidden;position: relative;">
+                    <ul class="onlineCal-ul-img clearfloat" ng-style="imgObj">
+                        <li ng-click="SwitchContentBtn(0)" ng-class="{SwitchBackground_btn: SwitchBackgroundT[0]==true}">
+                            <img src="images/cal/liImg/zongH.png">
+                            <p>综合服务包</p>
+                        </li>
+                        <!--<li ng-click="SwitchContentBtn(1)">-->
+                            <!--<img src="images/cal/liImg/geX.png">-->
+                            <!--<p>个性设计</p>-->
+                        <!--</li>-->
+                        <li ng-click="SwitchContentBtn(2)" ng-class="{SwitchBackground_btn: SwitchBackgroundT[2]==true}">
+                            <img src="images/cal/liImg/diB.png">
+                            <p>地板</p>
+                        </li>
+                        <li ng-click="SwitchContentBtn(3)" ng-class="{SwitchBackground_btn: SwitchBackgroundT[3]==true}">
+                            <img src="images/cal/liImg/ciZ.png">
+                            <p>瓷砖</p>
+                        </li>
+                        <li ng-click="SwitchContentBtn(4)" ng-class="{SwitchBackground_btn: SwitchBackgroundT[4]==true}">
+                            <img src="images/cal/liImg/chuW.png">
+                            <p>橱柜</p>
+                        </li>
+                        <li ng-click="SwitchContentBtn(5)" ng-class="{SwitchBackground_btn: SwitchBackgroundT[5]==true}">
+                            <img src="images/cal/liImg/diaoD.png">
+                            <p>吊顶</p>
+                        </li>
+                        <li ng-click="SwitchContentBtn(6)" ng-class="{SwitchBackground_btn: SwitchBackgroundT[6]==true}">
+                            <img src="images/cal/liImg/WeiY.png">
+                            <p>卫浴</p>
+                        </li>
+                        <li ng-click="SwitchContentBtn(7)" ng-class="{SwitchBackground_btn: SwitchBackgroundT[7]==true}">
+                            <img src="images/cal/liImg/MuM.png">
+                            <p>木门</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="onlineCalculation-ul-r" ng-click="onlineCalRight()" ng-class="{disable_btn: activeDisableTab == 100}">
+                    <i class="icon ion-arrow-right-a"></i>
+                </div>
+            </div>
+            <div class="Calculation-zong" ng-if="SwitchContentT[0]">
+                <div class="onlineCalculation-img">
+                    <img src="images/cal/onlineCalculation.jpg">
+                    <div style="padding: 0 10px 0 10px;">
+                        <p class="p1"><span>398</span>综合服务包</p>
+                        <p class="p2">已包含在<span>598</span>超惠套餐包内</p>
+                        <p class="p3">数量：<span>120</span>m<i>2</i></p>
+                        <p class="p4">备注：包含设计施工图、水电改造、防水处理、管家服务、包立管理、瓷砖铺贴、墙地面找平。屋顶处理、施工辅料、赠送配件。</p>
+                        <p class="p5"><span>598</span>超惠套餐包内包含的开关面板为飞雕开关面板套餐：<i>防溅盒*3、一开单*3、一开双*7、二开单*2、三开单*1、
+                            联体插方*25、一开单带5孔*2、空调插*3电视插*3、电话插*3、电脑插*3</i></p>
+                    </div>
+                </div>
+                <!--<div class="onlineCalculation-cal">-->
+                    <!--<p class="p6">总价：<span>7654</span>元+<span>0</span>元个性化项目</p>-->
+                    <!--<input type="button" value="预约量房" class="onlineCalculation-btn">-->
+                <!--</div>-->
+            </div>
+            <div class="Calculation-mu" ng-if="SwitchContentT[7]" ng-init="initonLineData()">
+                <p class="p1"><span>598</span>超惠套餐包中包含室内木门，且不限数量</p>
+                <div class="Calculation-mu-top clearfloat">
+                    <div ng-repeat="imgSrc in sampleData.calMu.imgSrc track by $index">
+                        <img ng-src="{{imgSrc.src}}" ng-if="CalculationT[$index]">
+                    </div>
+                    <div class="Calculation-mu-topP">
+                        <p>{{sampleData.calMu.text}}</p>
+                        <div ng-repeat="imgType in sampleData.calMu.imgType track by $index">
+                            <span ng-if="CalculationT[$index]">{{imgType.type}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="Calculation-mu-bot">
+                    <ul class="clearfloat">
+                        <li ng-repeat="ulSrc in sampleData.calMu.ulSrc track by $index" ng-click="CalculationBtn($index)" ng-class="{active: activeTab == $index}"><img ng-src="{{ulSrc.src}}"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Calculation-di" ng-if="SwitchContentT[2]">
+                <p class="p1"><span>598</span>超惠套餐包中包含室内木门，且不限面积</p>
+                <div class="Calculation-mu-top clearfloat">
+                    <img ng-if="CalculationT[0]" src="images/cal/cal_di1.jpg">
+                    <img ng-if="CalculationT[1]" src="images/cal/cal_di2.jpg">
+                    <img ng-if="CalculationT[2]" src="images/cal/cal_di3.jpg">
+                    <img ng-if="CalculationT[3]" src="images/cal/cal_di4.jpg">
+                    <div class="Calculation-mu-topP">
+                        <p>贝尔强化地板</p>
+                        <span ng-if="CalculationT[0]">WL4005</span>
+                        <span ng-if="CalculationT[1]">WL4003</span>
+                        <span ng-if="CalculationT[2]">WL2007</span>
+                        <span ng-if="CalculationT[3]">WL2020</span>
+                        <p class="jisun">1215*166*12*7P</p>
+                        <i class="danwei">单位：平方米</i>
+                    </div>
+                </div>
+                <div class="Calculation-mu-bot">
+                    <ul class="clearfloat">
+                        <li ng-click="CalculationBtn(0)" ng-class="{active: activeTab == 0}"><img src="images/cal/cal_di1.jpg"></li>
+                        <li ng-click="CalculationBtn(1)" ng-class="{active: activeTab == 1}"><img src="images/cal/cal_di2.jpg"></li>
+                        <li ng-click="CalculationBtn(2)" ng-class="{active: activeTab == 2}"><img src="images/cal/cal_di3.jpg"></li>
+                        <li ng-click="CalculationBtn(3)" ng-class="{active: activeTab == 3}"><img src="images/cal/cal_di4.jpg"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Calculation-chu" ng-if="SwitchContentT[4]">
+                <p class="p1"><span>598</span>超惠套餐包中包含整体橱柜、油烟机、灶具、水槽</p>
+                <img src="images/cal/cal_chu1.jpg">
+                <div class="Calculation-mu-top Calculation-mu-left  clearfloat">
+                    <p>鲁家大师兄-定制整体橱柜</p>
+                    <!--<p class="line"></p>-->
+                    <img src="images/cal/cal_chu2.jpg">
+                    <div class="Calculation-mu-topP">
+                        <p>樱花欧式直吸式油烟机</p>
+                        <span>型号：SRC-3911FC</span>
+                        <p class="jisun">尺寸：897*500*570</p>
+                        <i class="danwei">超大吸风量，超低噪音处理</i>
+                    </div>
+                    <img src="images/cal/cal_chu2.jpg">
+                    <div class="Calculation-mu-topP">
+                        <p>樱花欧式直吸式油烟机</p>
+                        <span>型号：SRC-3911FC</span>
+                        <p class="jisun">尺寸：897*500*570</p>
+                        <i class="danwei">超大吸风量，超低噪音处理</i>
+                    </div>
+                </div>
+            </div>
+            <div class="Calculation-wei" ng-if="SwitchContentT[6]">
+                <p class="p1"><span>598</span>超惠套餐包中包含浴室柜、马桶、五金挂件、龙头、配件等</p>
+                <div style="border-top:1px solid #ccc;padding-top: 5px;">
+                    <div class="Calculation-mu-top clearfloat">
+                        <img ng-if="CalculationT[0]" src="images/cal/cal_wei1.jpg">
+                        <img ng-if="CalculationT[1]" src="images/cal/cal_wei2.jpg">
+                        <div class="Calculation-mu-topP">
+                            <p ng-if="CalculationT[0]">安华-浴室柜</p>
+                            <p ng-if="CalculationT[1]">东鹏-浴室柜</p>
+                            <span ng-if="CalculationT[0]">型号：ANPG3353G-A</span>
+                            <span ng-if="CalculationT[1]">型号：JG0010791VQ</span>
+                            <p class="jisun" ng-if="CalculationT[0]">尺寸：790*450*800mm</p>
+                            <p class="jisun" ng-if="CalculationT[1]">尺寸：800*485*730mm</p>
+                            <!--<i class="danwei">单位：平方米</i>-->
+                        </div>
+                    </div>
+                    <div class="Calculation-mu-bot">
+                        <ul class="clearfloat">
+                            <li ng-click="CalculationBtn(0)" ng-class="{active: activeTab == 0}"><img src="images/cal/cal_wei1.jpg"></li>
+                            <li ng-click="CalculationBtn(1)" ng-class="{active: activeTab == 1}"><img src="images/cal/cal_wei2.jpg"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="border-top:1px solid #ccc;padding-top: 5px;">
+                    <div class="Calculation-mu-top clearfloat">
+                        <img ng-if="CalculationW[0]" src="images/cal/cal_wei3.jpg">
+                        <img ng-if="CalculationW[1]" src="images/cal/cal_wei4.jpg">
+                        <div class="Calculation-mu-topP">
+                            <p ng-if="CalculationW[0]">东鹏-连体坐厕</p>
+                            <p ng-if="CalculationW[1]">安华-连体坐厕</p>
+                            <span ng-if="CalculationW[0]">型号：W1551A05T/FYQ</span>
+                            <span ng-if="CalculationW[1]">型号：AB1351</span>
+                            <p class="jisun" ng-if="CalculationW[0]">尺寸：680*360*700mm</p>
+                            <p class="jisun" ng-if="CalculationW[1]">尺寸：678*380*715mm</p>
+                            <!--<i class="danwei">单位：平方米</i>-->
+                        </div>
+                    </div>
+                    <div class="Calculation-mu-bot">
+                        <ul class="clearfloat">
+                            <li ng-click="CalculationWei(0)" ng-class="{active: activeWei == 0}"><img src="images/cal/cal_wei3.jpg"></li>
+                            <li ng-click="CalculationWei(1)" ng-class="{active: activeWei == 1}"><img src="images/cal/cal_wei4.jpg"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="border-top:1px solid #ccc;padding-top: 5px;">
+                    <div class="Calculation-mu-top clearfloat">
+                        <img ng-if="CalculationD[0]" src="images/cal/cal_wei5.jpg">
+                        <img ng-if="CalculationD[1]" src="images/cal/cal_wei6.jpg">
+                        <div class="Calculation-mu-topP">
+                            <p ng-if="CalculationD[0]">安华-花洒套装</p>
+                            <p ng-if="CalculationD[1]">东鹏-花洒套装</p>
+                            <span ng-if="CalculationD[0]">型号：an2M1717C</span>
+                            <span ng-if="CalculationD[1]">型号：JJH2210X</span>
+                        </div>
+                    </div>
+                    <div class="Calculation-mu-bot">
+                        <ul class="clearfloat">
+                            <li ng-click="CalculationDeng(0)" ng-class="{active: activeDeng == 0}"><img src="images/cal/cal_wei5.jpg"></li>
+                            <li ng-click="CalculationDeng(1)" ng-class="{active: activeDeng == 1}"><img src="images/cal/cal_wei6.jpg"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="border-top:1px solid #ccc;padding-top: 5px;">
+                    <div class="Calculation-mu-top clearfloat">
+                        <img ng-if="CalculationL[0]" src="images/cal/cal_wei7.jpg">
+                        <img ng-if="CalculationL[1]" src="images/cal/cal_wei8.jpg">
+                        <div class="Calculation-mu-topP">
+                            <p ng-if="CalculationL[0]">安华-台盆龙头</p>
+                            <p ng-if="CalculationL[1]">东鹏-台盆龙头</p>
+                            <span ng-if="CalculationL[0]">型号：an1A1616C</span>
+                            <span ng-if="CalculationL[1]">型号：JJH1881D</span>
+                        </div>
+                    </div>
+                    <div class="Calculation-mu-bot">
+                        <ul class="clearfloat">
+                            <li ng-click="CalculationLong(0)" ng-class="{active: activeLong == 0}"><img src="images/cal/cal_wei7.jpg"></li>
+                            <li ng-click="CalculationLong(1)" ng-class="{active: activeLong == 1}"><img src="images/cal/cal_wei8.jpg"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="include">
+                    <p>包含五金挂件、配件</p>
+                    <div class="Calculation-mu-top clearfloat">
+                        <img ng-if="true" src="images/cal/cal_wei9.jpg">
+                        <div class="Calculation-mu-topP">
+                            <p ng-if="true">高宝-五金挂件三件套装，单毛巾杆*1、双层浴巾架*1、带盖卷纸架*1</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="include">
+                    <div class="Calculation-mu-top clearfloat">
+                        <img ng-if="true" src="images/cal/cal_wei10.jpg">
+                        <div class="Calculation-mu-topP">
+                            <p ng-if="true">高宝-配件套装，密封圈*1、软管*1、角阀*5、下水*1、地漏*2、洗衣机龙头*1、波纹管*1</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Calculation-diao" ng-if="SwitchContentT[5]">
+                <p class="p1"><span>598</span>超惠套餐包中包含厨房LED照明灯、浴霸、铝扣板</p>
+                <div class="Calculation-mu-top clearfloat">
+                    <img ng-if="CalculationT[0]" src="images/cal/cal_diao1.jpg">
+                    <img ng-if="CalculationT[1]" src="images/cal/cal_diao2.jpg">
+                    <img ng-if="CalculationT[2]" src="images/cal/cal_diao3.jpg">
+                    <div class="Calculation-mu-topP">
+                        <p>浅米黄铝扣板</p>
+                        <span ng-if="CalculationT[0]">型号：L877</span>
+                        <span ng-if="CalculationT[1]">型号：L856</span>
+                        <span ng-if="CalculationT[2]">型号：L861</span>
+                        <p class="jisun">尺寸：300*300*0.6</p>
+                    </div>
+                </div>
+                <div class="Calculation-mu-bot">
+                    <ul class="clearfloat">
+                        <li ng-click="CalculationBtn(0)" ng-class="{active: activeTab == 0}"><img src="images/cal/cal_diao1.jpg"></li>
+                        <li ng-click="CalculationBtn(1)" ng-class="{active: activeTab == 1}"><img src="images/cal/cal_diao2.jpg"></li>
+                        <li ng-click="CalculationBtn(2)" ng-class="{active: activeTab == 2}"><img src="images/cal/cal_diao3.jpg"></li>
+                    </ul>
+                </div>
+                <div class="Calculation-mu-top clearfloat">
+                    <img ng-if="true" src="images/cal/cal_diao4.jpg">
+                    <div class="Calculation-mu-topP">
+                        <p>厨房专用</p>
+                        <p>LED照明灯</p>
+                        <span ng-if="true">型号：CC-3030LED-7</span>
+                        <p class="jisun">尺寸：300*300*25</p>
+                    </div>
+                </div>
+                <div class="Calculation-mu-top clearfloat">
+                    <img ng-if="true" src="images/cal/cal_diao5.jpg">
+                    <div class="Calculation-mu-topP">
+                        <p>三合一浴霸</p>
+                        <span ng-if="true">型号：CC-A3060DFNF-1</span>
+                        <p class="jisun">尺寸：300*600</p>
+                        <p class="jisun">多功能：（风暖、换气、照明）</p>
+                        <p class="jisun">三合一浴霸</p>
+                    </div>
+                </div>
+            </div>
+            <div class="Calculation-ci" ng-if="SwitchContentT[3]">
+                <ul class="Calculation-ci-ul clearfloat">
+                    <li ng-class="{activeLi: activeLi == 0}" ng-click="activeLiBtn(0)">客厅大地砖</li>
+                    <li ng-class="{activeLi: activeLi == 1}" ng-click="activeLiBtn(1)">厨卫地砖</li>
+                    <li ng-class="{activeLi: activeLi == 2}" ng-click="activeLiBtn(2)">厨卫墙砖</li>
+                </ul>
+                <div ng-if="activeLiT[0]">
+                    <div class="Calculation-mu-top Calculation-mu-left  clearfloat">
+                        <img src="images/cal/cal_ci1.jpg" ng-if="activeLiTImg[0]">
+                        <img src="images/cal/cal_ci2.jpg" ng-if="activeLiTImg[1]">
+                        <div class="Calculation-mu-topP">
+                            <p>中盛-客厅地砖</p>
+                            <span ng-if="activeLiTImg[0]">型号：8AK098T</span>
+                            <span ng-if="activeLiTImg[1]">型号：8AA098T</span>
+                            <p class="jisun">尺寸：800*800</p>
+                            <i class="danwei">抛光砖</i>
+                        </div>
+                    </div>
+                    <div class="Calculation-mu-bot">
+                        <ul class="clearfloat">
+                            <li ng-click="CalculationBtnCi(0)" ng-class="{active: activeTabImg == 0}"><img src="images/cal/cal_ci1.jpg"></li>
+                            <li ng-click="CalculationBtnCi(1)" ng-class="{active: activeTabImg == 1}"><img src="images/cal/cal_ci2.jpg"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div ng-if="activeLiT[1]">
+                    <div class="Calculation-mu-top Calculation-mu-left  clearfloat">
+                        <img src="images/cal/cal_ci3.jpg" ng-if="activeLiTImg[0]">
+                        <img src="images/cal/cal_ci4.jpg" ng-if="activeLiTImg[1]">
+                        <img src="images/cal/cal_ci5.jpg" ng-if="activeLiTImg[2]">
+                        <img src="images/cal/cal_ci6.jpg" ng-if="activeLiTImg[3]">
+                        <div class="Calculation-mu-topP">
+                            <p>中盛-地砖</p>
+                            <span ng-if="activeLiTImg[0]">型号：ZDB32003</span>
+                            <span ng-if="activeLiTImg[1]">型号：ZDMA3309</span>
+                            <span ng-if="activeLiTImg[2]">型号：ZDMA3310</span>
+                            <span ng-if="activeLiTImg[3]">型号：ZDB36073</span>
+                            <p class="jisun">尺寸：300*300</p>
+                            <i class="danwei">釉面地砖</i>
+                        </div>
+                    </div>
+                    <div class="Calculation-mu-bot">
+                        <ul class="clearfloat">
+                            <li ng-click="CalculationBtnCi(0)" ng-class="{active: activeTabImg == 0}"><img src="images/cal/cal_ci3.jpg"></li>
+                            <li ng-click="CalculationBtnCi(1)" ng-class="{active: activeTabImg == 1}"><img src="images/cal/cal_ci4.jpg"></li>
+                            <li ng-click="CalculationBtnCi(2)" ng-class="{active: activeTabImg == 2}"><img src="images/cal/cal_ci5.jpg"></li>
+                            <li ng-click="CalculationBtnCi(3)" ng-class="{active: activeTabImg == 3}"><img src="images/cal/cal_ci6.jpg"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div ng-if="activeLiT[2]">
+                    <div class="Calculation-mu-top Calculation-mu-left  clearfloat">
+                        <img src="images/cal/cal_ci7.jpg" ng-if="activeLiTImg[0]">
+                        <img src="images/cal/cal_ci8.jpg" ng-if="activeLiTImg[1]">
+                        <img src="images/cal/cal_ci9.jpg" ng-if="activeLiTImg[2]">
+                        <img src="images/cal/cal_ci10.jpg" ng-if="activeLiTImg[3]">
+                        <div class="Calculation-mu-topP">
+                            <p>中盛-墙砖</p>
+                            <span ng-if="activeLiTImg[0]">型号：ZDMA2002</span>
+                            <span ng-if="activeLiTImg[1]">型号：ZDMA2003</span>
+                            <span ng-if="activeLiTImg[2]">型号：ZDMA2004</span>
+                            <span ng-if="activeLiTImg[3]">型号：ZDMA2005</span>
+                            <p class="jisun">尺寸：240*660</p>
+                            <i class="danwei">釉面墙砖</i>
+                        </div>
+                    </div>
+                    <div class="Calculation-mu-bot">
+                        <ul class="clearfloat">
+                            <li ng-click="CalculationBtnCi(0)" ng-class="{active: activeTabImg == 0}"><img src="images/cal/cal_ci7.jpg"></li>
+                            <li ng-click="CalculationBtnCi(1)" ng-class="{active: activeTabImg == 1}"><img src="images/cal/cal_ci8.jpg"></li>
+                            <li ng-click="CalculationBtnCi(2)" ng-class="{active: activeTabImg == 2}"><img src="images/cal/cal_ci9.jpg"></li>
+                            <li ng-click="CalculationBtnCi(3)" ng-class="{active: activeTabImg == 3}"><img src="images/cal/cal_ci10.jpg"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="Calculation-ge"></div>
+            <!--<div class="onlineCalculation-cal">-->
+                <!--<p class="p6">总价：<span>7654</span>元+<span>0</span>元个性化项目</p>-->
+                <!--<input type="button" value="预约量房" class="onlineCalculation-btn">-->
+            <!--</div>-->
+        </div>
+
+    </ion-content>
+    <!-- 预约量房-->
+    <div class="onlineCalculation-cal">
+        <p class="p6">总价：<span>7654</span>元+<span>0</span>元个性化项目</p>
+        <input type="button" value="预约量房" class="onlineCalculation-btn">
+    </div>
+</ion-view>

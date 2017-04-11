@@ -1,0 +1,72 @@
+<ion-view view-title="装修" id="home">
+    <ion-content delegate-handle="myscroll" onscroll="testScroll()">
+        <!-- 轮播图-->
+        <ion-slide-box class="slide-box" does-continue="true" auto-play="true" slide-interval="3000" show-pager="true" >
+            <ion-slide>
+                <div class="box"><img src="images/tab1.jpg" alt="" height="155" width="100%"></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/tab2.jpg" alt="" style="height:155px;width:100%;display: inline-block"></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/tab3.jpg" alt="" style="height:155px;width:100%;display: inline-block"></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box"><img src="images/tab4.jpg" alt="" style="height:155px;width:100%;display: inline-block"></div>
+            </ion-slide>
+        </ion-slide-box>
+
+        <!-- tabs选项页-->
+        <div class="table">
+			
+			<!--
+            <div class="title">
+                <ul class="title-info">
+                    <li ng-repeat="title in data track by $index" ng-click='decorateType($index)' ng-show="title.active=true" >{{title.title}}</li>
+                </ul>
+            </div>
+            <div class="content">
+                <div ng-repeat-start="title in data "></div>
+                    <div class="item-info" ng-repeat="title in data track by $index" ng-if="contentDate[$index]">
+                        <a ng-repeat="name in title.text">{{name.name}}</a>
+                    </div>
+                <div ng-repeat-end></div>
+            </div>
+			-->
+			
+        </div>
+
+        <!-- 四张有遮罩的图片-->
+        <div class="img clearfloat" ng-init="initData()">
+            <div class="pic" ng-repeat="data in sampleData">
+                <img ng-src="{{data.src}}" alt="">
+                <div class="text">
+                    <h3 ng-bind="data.title"></h3>
+                    <p ng-bind="data.text"></p>
+                </div>
+            </div>
+        </div>
+
+        <!--装饰预览区-->
+        <div class="banner clearfloat" ng-init="initPreview()">
+            <ul class="banner-preview-ul clearfloat">
+                <li class="banner-blockly" ng-repeat="preview in previewData.preview1">
+                    <ul class="banner-ul clearfloat">
+                        <li>
+                            <img ng-src="{{preview.src}}" data-index="{{$index}}"  ng-click="showPopup()" >
+                        </li>
+                    </ul>
+                    <p class="banner-p">
+                        {{preview.title}}
+                        <span class="banner-span" ng-bind="preview.num"></span>
+                    </p>
+                </li>
+            </ul>
+        </div>
+    </ion-content>
+    <!-- 向上置顶按钮-->
+    <div class="to-top" ng-click="toTop()">
+        <i class="icon ion-chevron-up"></i>
+        <p>置顶</p>
+    </div>
+</ion-view>

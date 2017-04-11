@@ -1,0 +1,27 @@
+{
+  "calMu":{
+    "imgSrc":[
+      {"src":"images/cal/cal_mu1.jpg"},
+      {"src":"images/cal/cal_mu2.jpg"}
+    ],
+    "text":"鲁家大师兄木门",
+    "imgType":[
+      {
+        "type":"型号：海伦"
+      },
+      {
+        "type":"型号：底特律"
+      }
+    ],
+    "ulSrc":[
+      {"src":"images/cal/cal_mu1.jpg"},
+      {"src":"images/cal/cal_mu2.jpg"}
+    ]
+  },
+  "calDi":{},
+  "calChu":{},
+  "calWei":{},
+  "calDiao":{},
+  "calCi":{},
+  "calGe":{}
+}

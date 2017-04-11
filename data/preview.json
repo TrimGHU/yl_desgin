@@ -1,0 +1,109 @@
+{
+  "preview1":[
+    {
+      "src":"images/A_简约风/1.jpg",
+      "title":"美观简约风设计效果图",
+      "num":"2张",
+      "other":[
+        {"img":"images/A_简约风/1.jpg"},
+        {"img":"images/A_简约风/2.jpg"}
+      ]
+    },
+    {
+      "src":"images/A_欧式风格/1.jpg",
+      "title":"欧式大气美观风格效果图",
+      "num":"6张",
+      "other":[
+        {"img":"images/A_欧式风格/1.jpg"},
+        {"img":"images/A_欧式风格/2.jpg"},
+        {"img":"images/A_欧式风格/3.jpg"},
+        {"img":"images/A_欧式风格/4.jpg"},
+        {"img":"images/A_欧式风格/5.jpg"},
+        {"img":"images/A_欧式风格/6.jpg"}
+      ]
+
+    },
+    {
+      "src":"images/A_欧式风格/1.jpg",
+      "title":"现代舒适风效果图",
+      "num":"4张",
+      "other":[
+        {"img":"images/A_欧式风格/1.jpg"},
+        {"img":"images/A_欧式风格/2.jpg"},
+        {"img":"images/A_欧式风格/3.jpg"},
+        {"img":"images/A_欧式风格/4.jpg"}
+      ]
+
+    },
+    {
+      "src":"images/A_现代简约风/1.jpg",
+      "title":"现当代简约风效果图",
+      "num":"6张",
+      "other":[
+        {"img":"images/A_现代简约风/1.jpg"},
+        {"img":"images/A_现代简约风/2.jpg"},
+        {"img":"images/A_现代简约风/3.jpg"},
+        {"img":"images/A_现代简约风/4.jpg"},
+        {"img":"images/A_现代简约风/5.jpg"},
+        {"img":"images/A_现代简约风/6.jpg"}
+      ]
+
+    },
+    {
+      "src":"images/A_现代艺术风/1.jpg",
+      "title":"现代艺术风效果图",
+      "num":"4张",
+      "other":[
+        {"img":"images/A_现代艺术风/1.jpg"},
+        {"img":"images/A_现代艺术风/2.jpg"},
+        {"img":"images/A_现代艺术风/3.jpg"},
+        {"img":"images/A_现代艺术风/4.jpg"}
+      ]
+
+    },
+    {
+      "src":"images/B_混搭复古风/1.jpg",
+      "title":"混搭风复古阁楼式效果图",
+      "num":"5张",
+      "other":[
+        {"img":"images/B_混搭复古风/1.jpg"},
+        {"img":"images/B_混搭复古风/2.jpg"},
+        {"img":"images/B_混搭复古风/3.jpg"},
+        {"img":"images/B_混搭复古风/4.jpg"},
+        {"img":"images/B_混搭复古风/5.jpg"}
+      ]
+
+    },
+    {
+      "src":"images/B_清新美式复式/1.jpg",
+      "title":"清新美式复式效果图",
+      "num":"8张",
+      "other":[
+        {"img":"images/B_清新美式复式/1.jpg"},
+        {"img":"images/B_清新美式复式/2.jpg"},
+        {"img":"images/B_清新美式复式/3.jpg"},
+        {"img":"images/B_清新美式复式/4.jpg"},
+        {"img":"images/B_清新美式复式/5.jpg"},
+        {"img":"images/B_清新美式复式/6.jpg"},
+        {"img":"images/B_清新美式复式/7.jpg"},
+        {"img":"images/B_清新美式复式/8.jpg"}
+      ]
+
+    },
+    {
+      "src":"images/B_舒适休闲北欧/1.jpg",
+      "title":"舒适休闲北欧效果图",
+      "num":"4张",
+      "other":[
+        {"img":"images/B_舒适休闲北欧/1.jpg"},
+        {"img":"images/B_舒适休闲北欧/2.jpg"},
+        {"img":"images/B_舒适休闲北欧/3.jpg"},
+        {"img":"images/B_舒适休闲北欧/4.jpg"}
+      ]
+
+    }
+  ],
+  "preview2":[
+  ]
+
+}
