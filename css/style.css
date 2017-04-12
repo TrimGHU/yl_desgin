@@ -567,6 +567,15 @@ textarea{resize:none;}
 .details-door-bot{
     width: 100%;
     margin-top: 5px;
+    float: left;
+}
+.details-door-bot>li:first-child{
+    position: relative;
+}
+.details-door-bot>li:first-child p{
+    position: absolute;
+    left: 0px;
+    top:0px;
 }
 .details-door1{
     width: 23%;
@@ -872,4 +881,34 @@ textarea{resize:none;}
 .Calculation-ci-ul .activeLi{
     background-color: rgba(0,160,96,1);
     color: #fff;
+}
+
+
+/*修改后的信息*/
+.chooseMess{
+    width: 100%;
+}
+.chooseMess .chooseMess-li{
+    float: left;
+    /*height: 100px;*/
+    /*margin-top: 10px;*/
+    width: 31%;
+    float: left;
+    /*border:1px solid #ccc;*/
+    margin-right: 6px;
+    margin-bottom: 10px;
+}
+.chooseMess-li-p{
+    font-size: 12px;
+    line-height: 26px;
+    height: 26px;
+}
+.chooseMess-li-mess{
+    width: 100%;
+    padding: 2%;
+    border: 1px solid #ccc;
+    min-height:290px;
+}
+.chooseMess-li-mess>img{
+    width: 100%;
 }

@@ -9,24 +9,26 @@
                     <div class="details-door-l">
                         <img ng-src="{{data.muSrc}}">
                     </div>
-                    <div class="details-door-r">
+                    <div class="details-door-r" ng-if="data.muSrc!=''">
                         <span ng-bind="data.muName"></span>
                         <p class="line"></p>
                         <i ng-bind="data.muDes"></i>
                     </div>
                 </div>
-                <p class="choose-door" ng-bind="data.muChoose"></p>
-                <ul class="details-door-bot clearfloat">
-                    <li class="details-door1" ng-repeat="dataLi in data.muList">
-                        <img ng-src="{{dataLi.src}}">
-                        <ul>
-                            <li class="pad-type" ng-bind="dataLi.title"></li>
-                            <li class="pad-type" ng-bind="dataLi.type"></li>
-                            <li class="pad-type" ng-bind="dataLi.standard"></li>
-                            <li class="pad-type" ng-bind="dataLi.describe"></li>
-                        </ul>
-                    </li>
-                </ul>
+                <div class="chooseMess clearfloat">
+                    <div class="chooseMess-li" ng-repeat="datalist in data.muList">
+                        <p class="chooseMess-li-p" ng-bind="datalist.muChoose"></p>
+                        <div class="chooseMess-li-mess">
+                            <img ng-src="{{datalist.src}}">
+                            <ul>
+                                <li class="pad-type" ng-bind="datalist.title"></li>
+                                <li class="pad-type" ng-bind="datalist.type"></li>
+                                <li class="pad-type" ng-bind="datalist.standard"></li>
+                                <li class="pad-type" ng-bind="datalist.describe"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 

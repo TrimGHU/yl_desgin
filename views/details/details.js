@@ -16,7 +16,8 @@ angular.module("myApp").controller("detailsCtrl",function($scope,$http,CaseDetai
             absUrl = "data."+absUrl;
             $scope.detailsData = eval(absUrl);
             // $scope.detailsData = data.delicate;
-            console.log("获取数据:"+$scope.detailsData);
+            // console.log("获取数据:"+$scope.detailsData.mu.muList.length);
+            // console.log("获取数据:"+$scope.detailsData.wei.muList[1][0].muChoose);
         },function () {
             alert("样本数据加载失败！！！");
         });

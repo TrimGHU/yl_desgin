@@ -24,14 +24,14 @@
 
     },
     {
-      "src":"images/A_欧式风格/1.jpg",
+      "src":"images/A_舒适风/1.jpg",
       "title":"现代舒适风效果图",
       "num":"4张",
       "other":[
-        {"img":"images/A_欧式风格/1.jpg"},
-        {"img":"images/A_欧式风格/2.jpg"},
-        {"img":"images/A_欧式风格/3.jpg"},
-        {"img":"images/A_欧式风格/4.jpg"}
+        {"img":"images/A_舒适风/1.jpg"},
+        {"img":"images/A_舒适风/2.jpg"},
+        {"img":"images/A_舒适风/3.jpg"},
+        {"img":"images/A_舒适风/4.jpg"}
       ]
 
     },
