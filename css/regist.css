@@ -1,0 +1,299 @@
+.whan-ad {
+	width: 100%;
+}
+
+.whan-ad-ask .fabiaoqu-ask {
+	position: absolute;
+	width: 100%;
+	background-color: #f8f8f8;
+	left: 0;
+	height: 334px;
+}
+
+.zxd-form {
+	padding: 4%;
+	background: transparent;
+}
+
+.zxd-form div {
+	position: relative;
+	background: #fff;
+	border: solid 1px #e1e1e1;
+	border-radius: 6px;
+	margin: 10px 0;
+	overflow: hidden;
+}
+
+.zxd-form div span {
+	position: absolute;
+	right: 15px;
+	top: 16px;
+	color: #333;
+}
+
+.zxd-form div.download-arrow:after {
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-color: #999 transparent transparent transparent;
+	border-width: 6px;
+	font-size: 0;
+	position: absolute;
+	top: 23px;
+	right: 18px;
+}
+
+.zxd-form div input {
+	-webkit-appearance: none;
+	outline: none;
+	padding-left: 10px;
+	display: inline-block;
+}
+
+.zxd-form div input[type='button'] {
+	height: 50px;
+	width: 100%;
+}
+
+.zxd-form div input[type='text'], .zxd-form div input[type='tel'],
+	.zxd-form div input[type='number'] {
+	display: block;
+	height: 50px;
+	border: none;
+	text-align: left;
+	width: 100%;
+}
+
+.zxd-form div label {
+	position: relative;
+}
+
+.zxd-form div span {
+	vertical-align: 6px;
+}
+
+.jiting {
+	height: 50px;
+}
+
+.jiting label {
+	float: left;
+	width: 25%;
+}
+
+.jiting label select {
+	background-color: #fff;
+	-webkit-appearance: none;
+	height: 50px;
+	border: none;
+	width: 100%;
+	outline: none;
+	margin-left: 3%;
+}
+
+.jiting label:after {
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-color: #999 transparent transparent transparent;
+	border-width: 6px;
+	font-size: 0;
+	position: absolute;
+	top: 23px;
+	right: 12px;
+}
+
+.jiting label:before {
+	content: '';
+	position: absolute;
+	right: 4px;
+	top: 12px;
+	border-right: solid 1px #e3e3e3;
+	height: 26px;
+	z-index: 10;
+}
+
+.jiting label:last-of-type::before {
+	content: '';
+	position: absolute;
+	right: 4px;
+	top: 12px;
+	border-right: solid 1px #e3e3e3;
+	height: 26px;
+	z-index: 10;
+	display: none;
+}
+
+.jiting input {
+	width: 50%;
+	float: left;
+}
+
+.jiting input:nth-of-type(1) {
+	height: 30px !important;
+	margin-top: 10px;
+	border-right: solid 1px #e3e3e3 !important;
+}
+
+.jishi {
+	height: 50px;
+}
+
+.jishi label {
+	float: left;
+	width: 33%;
+}
+
+.jishi label select {
+	-webkit-appearance: none;
+	background-color: #fff;
+	height: 50px;
+	border: none;
+	width: 100%;
+	outline: none;
+	margin-left: 3%;
+}
+
+.jishi label:after {
+	content: '';
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-color: #999 transparent transparent transparent;
+	border-width: 6px;
+	font-size: 0;
+	position: absolute;
+	top: 23px;
+	right: 18px;
+}
+
+.jishi label:nth-of-type(1)::before {
+	content: '';
+	position: absolute;
+	right: 4px;
+	top: 12px;
+	border-right: solid 1px #e3e3e3;
+	height: 26px;
+	z-index: 10;
+}
+
+.jishi label:nth-of-type(2)::before {
+	content: '';
+	position: absolute;
+	right: 4px;
+	top: 12px;
+	border-right: solid 1px #e3e3e3;
+	height: 26px;
+	z-index: 10;
+}
+
+.jishi input {
+	width: 33.2%;
+	float: left;
+}
+
+.zxd-form-tip {
+	font-size: 12px;
+	color: #e54a4a;
+	margin: 10px 0;
+	display: none;
+}
+
+#ask-form-submit, #ask-submit-again {
+	border: none;
+	font-size: 17px;
+	color: #fff;
+	background-color: #f79c33;
+	border-radius: 6px;
+	-webkit-appearance: none;
+	margin-top: 10px;
+	height: 44px;
+	width: 100%;
+	text-align: center;
+	outline: none;
+}
+
+#ask-submit-again {
+	background-color: #fff;
+	color: #666;
+	border: 1px solid #E3E3E3;
+	font-size: 14px;
+}
+
+#ask-form-submit.active, #ask-submit-again.active {
+	background: #fff;
+	color: #666;
+	border: solid #e3e3e3 1px;
+}
+
+#area {
+	background-color: #fff;
+	text-align: left;
+	border: none;
+	-webkit-appearance: none;
+}
+
+.zxd-form .touch-input2 label {
+	position: absolute;
+	right: 15px;
+	top: 16px;
+	color: #333;
+}
+
+.ask-oarea-remind {
+	color: #999;
+	font-size: 13px;
+}
+
+.zxd-form .touch-input2 label {
+	position: absolute;
+	right: 15px;
+	top: 16px;
+	color: #333;
+}
+
+.zxd-form div.download-arrow1:after {
+	content: '';
+	width: 10px;
+	height: 10px;
+	font-size: 0;
+	position: absolute;
+	top: 20px;
+	right: 18px;
+	border-top: 1px solid #999;
+	border-right: 1px solid #999;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+#froms #area {
+	background-color: #fff;
+	text-align: left;
+	border: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.whan-ad div .dialog-827img {
+	position: absolute;
+	right: 27px;
+	top: 45px;
+	width: 36px;
+	margin-top: -49px;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+}
+
+.whan-ad div .dialog-827img-up {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	transform: rotate(180deg);
+}

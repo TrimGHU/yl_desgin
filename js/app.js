@@ -48,10 +48,12 @@ app.config(function($stateProvider,$urlRouterProvider){
         url:'/home',
         templateUrl:'views/home/home.html',
         controller:'homeCtrl'
+    /**
     }).state('regist',{//预估报价
         url:'/regist',
         templateUrl:'views/regist/regist.html',
         controller:'registCtrl'
+    **/
     }).state('design',{//预估报价
         url:'/design',
         templateUrl:'views/perDesign/design.html',

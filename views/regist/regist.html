@@ -1,58 +1,89 @@
-<ion-view view-title="预估报价" id="regist">
-    <!--计算房价-->
-    <div class="forecast">
-        <div class="forecast-top">
-            <img src="images/tab1.jpg">
-        </div>
-        <div class="forecast-main clearfloat">
-            <p>已经有<span>161453</span>位业主使用了装修免费报价服务</p>
-            <div class="address-choose">
-                <input class="address-choose-p" placeholder="请选择您所在的城市">
-                <i class="icon ion-chevron-righ icon-city"></i>
-            </div>
-            <div class="clearfloat">
-                <div class="community">
-                    <input type="text" placeholder="小区">
-                </div>
-                <div class="community-area">
-                    <input type="number" placeholder="面积" class="area" max="9" ng-keyup="checkInput(ctrlScope.myMessage)" ng-model="ctrlScope.myMessage">
-                    <span>m</span>
-                    <i>2</i>
-                </div>
-            </div>
-            <select class="community-select1">
-                <option value="1">1室</option>
-                <option value="2">2室</option>
-                <option value="3">3室</option>
-                <option value="4">4室</option>
-                <option value="5">5室</option>
-                <option value="6">6室</option>
-            </select>
-            <select class="community-select2">
-                <option value="1">1厅</option>
-                <option value="2">2厅</option>
-                <option value="3">3厅</option>
-                <option value="4">4厅</option>
-                <option value="5">5厅</option>
-                <option value="6">6厅</option>
-            </select>
-            <select class="community-select1">
-                <option value="1">1卫</option>
-                <option value="2">2卫</option>
-                <option value="3">3卫</option>
-                <option value="4">4卫</option>
-                <option value="5">5卫</option>
-                <option value="6">6卫</option>
-            </select>
-            <select class="community-select2">
-                <option value="1">新房装修</option>
-                <option value="2">旧房装修</option>
-            </select>
-            <input type="text" class="tel-num" placeholder="请输入真实号码，报价结果将发送到您的手机" maxlength="11">
-            <input type="button" class="communityBtn" value="免费报价">
-            <div style="width: 100%;">
-                <p class="promise">我们承诺：该项服务为免费服务，无任何费用。并且您的隐私将被严格保密，不被打扰泄露。</p>
-            </div>
-        </div>
-    </div>
-</ion-view>
+<html lang="en" ng-app="myApp">
+<head>
+<meta charset="UTF-8">
+<title>土巴兔装修</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+<link href="../../css/style.css" rel="stylesheet" type="text/css">
+<link href="../../css/mediaScreen.css" rel="stylesheet" type="text/css">
+<link href="../../css/provincesSelect.css" rel="stylesheet" type="text/css">
+<link href="../../css/regist.css" rel="stylesheet" type="text/css">
+<script src="../../js/jquery-1.10.1.min.js"></script>
+<script src="provincesSelect.js"></script>
+</head>
+
+<body>
+<div>
+	<img style="width: 100%;" alt="" src="../../images/A_现代艺术风/3.jpg"/>
+</div>
+<div class="whan-ad whan-ad-ask whan-ad-h70">
+	<div id="fabiaoqu-ask" class="fabiaoqu-ask">
+		<p style="margin-top: 15px;margin-left: 17px;font-size: 12px;color: #e54a4a;">已经有超万位业主使用了装修免费报价服务</p>
+		<form id="froms" class="zxd-form">
+			<div class="download-arrow1">
+				<input type="hidden" name="ptag" value="2_1_1_2"> <input
+					type="text" id="slide_area" placeholder="请选择您的所在城市"
+					style="color: rgb(0, 0, 0);" readonly="">
+			</div>
+			<div class="touch-input2">
+				<input type="number" name="oarea" id="areaInput"
+					placeholder="请输入您的房屋面积"><label for="areaInput">m²</label>
+			</div>
+			<div class="jiting clearfix" id="jiting">
+				<label> <select name="" id="secshi" class="needsclick"><option
+							value="1">1&nbsp;室</option>
+						<option value="2">2&nbsp;室</option>
+						<option value="3">3&nbsp;室</option>
+						<option value="4">4&nbsp;室</option>
+						<option value="5">5&nbsp;室</option>
+						<option value="6">6&nbsp;室</option></select>
+				</label> <label> <select name="" id="secting" class="needsclick"><option
+							value="1">1&nbsp;厅</option>
+						<option value="2">2&nbsp;厅</option>
+						<option value="3">3&nbsp;厅</option>
+						<option value="4">4&nbsp;厅</option>
+						<option value="5">5&nbsp;厅</option>
+						<option value="6">6&nbsp;厅</option></select>
+				</label> <label> <select name="" id="secchu" class="needsclick"><option
+							value="1">1&nbsp;厨</option>
+						<option value="2">2&nbsp;厨</option>
+						<option value="3">3&nbsp;厨</option>
+						<option value="4">4&nbsp;厨</option>
+						<option value="5">5&nbsp;厨</option>
+						<option value="6">6&nbsp;厨</option></select>
+				</label> <label style="float: right;"> <select name=""
+					id="secyangtai" class="needsclick"><option value="1">1&nbsp;阳台</option>
+						<option value="2">2&nbsp;阳台</option>
+						<option value="3">3&nbsp;阳台</option>
+						<option value="4">4&nbsp;阳台</option>
+						<option value="5">5&nbsp;阳台</option>
+						<option value="6">6&nbsp;阳台</option></select>
+				</label>
+			</div>
+			<div style="margin: 10px 0 0 0;">
+				<input type="tel" id="newPhone" name="phone"
+					placeholder="请输入真实号码，报价结果将发送到您的手机">
+			</div>
+			<input id="ask-form-submit" class="ptag-set" type="button" value="免费报价">
+		</form>
+	</div>
+	<div class="shade-click" style="width: 320px;"></div>
+</div>
+<script type="text/javascript">
+	$(function() {
+		ProvincesSelect.initialize({
+			targetDom : '#slide_area',
+			callback : function() {
+				//选择城市为深圳则显示微信小号banner
+				var bothName = $('#slide_area').val().split(' ');
+				var cityName = '';
+				if (bothName) {
+					cityName = bothName[1];
+				}
+				;
+				cityMemory = cityName;
+			}
+		});
+	});
+</script>
+</body>
+</html>
