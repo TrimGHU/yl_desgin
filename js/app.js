@@ -40,11 +40,7 @@ app.directive("to-top", function() {
     };
 });
 app.config(function($stateProvider,$urlRouterProvider){
-    $stateProvider.state('connect',{//联系我们
-        url:'/connect',
-        templateUrl:'views/connectUs/connect.html',
-        controller:'connectCtrl'
-    }).state('home',{//轮播图
+    $stateProvider.state('home',{//轮播图
         url:'/home',
         templateUrl:'views/home/home.html',
         controller:'homeCtrl'

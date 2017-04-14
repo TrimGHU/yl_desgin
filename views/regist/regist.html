@@ -11,7 +11,7 @@
 <script src="provincesSelect.js"></script>
 </head>
 
-<body>
+<body style="overflow-y: scroll;">
 <div>
 	<img style="width: 100%;" alt="" src="../../images/A_现代艺术风/3.jpg"/>
 </div>
@@ -20,13 +20,14 @@
 		<p style="margin-top: 15px;margin-left: 17px;font-size: 12px;color: #e54a4a;">已经有超万位业主使用了装修免费报价服务</p>
 		<form id="froms" class="zxd-form">
 			<div class="download-arrow1">
-				<input type="hidden" name="ptag" value="2_1_1_2"> <input
-					type="text" id="slide_area" placeholder="请选择您的所在城市"
-					style="color: rgb(0, 0, 0);" readonly="">
+				<input type="hidden" name="ptag" value="2_1_1_2"> 
+				<input type="text" id="slide_area" placeholder="所在城市" style="color: rgb(0, 0, 0);" readonly="readonly">
 			</div>
 			<div class="touch-input2">
-				<input type="number" name="oarea" id="areaInput"
-					placeholder="请输入您的房屋面积"><label for="areaInput">m²</label>
+				<input type="text" name="oxiaoqu" id="xiaoquInput" placeholder="小区名称">
+			</div>
+			<div class="touch-input2">
+				<input type="number" name="oarea" id="areaInput" placeholder="房屋面积"><label for="areaInput">m²</label>
 			</div>
 			<div class="jiting clearfix" id="jiting">
 				<label> <select name="" id="secshi" class="needsclick"><option
@@ -44,12 +45,12 @@
 						<option value="5">5&nbsp;厅</option>
 						<option value="6">6&nbsp;厅</option></select>
 				</label> <label> <select name="" id="secchu" class="needsclick"><option
-							value="1">1&nbsp;厨</option>
-						<option value="2">2&nbsp;厨</option>
-						<option value="3">3&nbsp;厨</option>
-						<option value="4">4&nbsp;厨</option>
-						<option value="5">5&nbsp;厨</option>
-						<option value="6">6&nbsp;厨</option></select>
+							value="1">1&nbsp;卫</option>
+						<option value="2">2&nbsp;卫</option>
+						<option value="3">3&nbsp;卫</option>
+						<option value="4">4&nbsp;卫</option>
+						<option value="5">5&nbsp;卫</option>
+						<option value="6">6&nbsp;卫</option></select>
 				</label> <label style="float: right;"> <select name=""
 					id="secyangtai" class="needsclick"><option value="1">1&nbsp;阳台</option>
 						<option value="2">2&nbsp;阳台</option>
@@ -73,7 +74,6 @@
 		ProvincesSelect.initialize({
 			targetDom : '#slide_area',
 			callback : function() {
-				//选择城市为深圳则显示微信小号banner
 				var bothName = $('#slide_area').val().split(' ');
 				var cityName = '';
 				if (bothName) {
@@ -82,6 +82,63 @@
 				;
 				cityMemory = cityName;
 			}
+		});
+		
+		$('#ask-form-submit').click(function() {
+			var city = $('#slide_area').val();
+			var area = $('#areaInput').val();
+			var phone = $('#newPhone').val();
+			var xiaoqu = $('#xiaoquInput').val();
+			
+			
+			if(city == ''){
+				alert('请选择所在城市');
+				return;
+			}
+			
+			if(area == ''){
+				alert('请输入房屋面积');
+				return;
+			}
+			
+			if(xiaoquInput == ''){
+				alert('请输入小区名称');
+				return;
+			}
+			
+			if(phone == '' || phone.length != 11){
+				alert('请输入有效的手机号码');
+				return;
+			}
+			
+
+			$.ajax({
+				url : 'http://112.74.168.63:8080/wechat/regist',
+				data : {
+					'city' : city,
+					'area' : area,
+					'phone' : phone,
+					'xiaoqu' : xiaoqu,
+					'shi' : $('#secshi').val(),
+					'ting' : $('#secting').val(),
+					'wei' : $('#secchu').val(),
+					'yangtai' : $('#secyangtai').val(),
+				},
+				type : 'post',
+				cache : false,
+				dataType : 'text',
+				success : function(data) {
+					$('#slide_area').val('');
+					$('#areaInput').val('');
+					$('#newPhone').val('');
+					$('#xiaoquInput').val('');
+					
+					alert('已经提交您的请求，稍后会有专业人员联系您！');
+				},
+				error : function(data) {
+					alert('亲，服务器繁忙，请稍后再试！')
+				}
+			});
 		});
 	});
 </script>

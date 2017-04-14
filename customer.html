@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<html lang="en" ng-app="myApp">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>迎亮装饰设计-查看联系人</title>
+<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+<script src="js/jquery-1.10.1.min.js"></script>
+<style>
+table tr th, table tr td { 
+	border:1px solid #0094ff; 
+}
+table{
+    padding-top: 20px;
+	width: 100%;
+	font-size: 18px;
+}
+
+tr:first-child td{
+	font-weight: bold;
+}
+
+td:first-child{
+	width: 25%;
+}
+td:nth-child(2){
+	width: 75%;
+}
+</style>
+</head>
+
+<body style="overflow-y: scroll;">
+	<div>
+		<input type="date" style="margin-top: 15px;margin-left: 20px;height: 40px;padding-left: 20px;" name="user_date" id="date"/>
+		<input type="button" style="height: 40px;width: 60px;" id="customBtn" value="查询"/>
+	</div>
+	<div>
+		<table id="customerInfo">
+		</table>
+	</div>
+</body>
+<script type="text/javascript">
+	$(function() {
+		$('#customBtn').click(function() {
+			var date = $('#date').val();
+			
+			if(date == ''){
+				alert('请选择日期');
+				return;
+			}
+
+			$.ajax({
+				url : 'http://112.74.168.63:8080/wechat/showCustomer?day='+date.replace(/-/g,''),
+				type : 'get',
+				cache : false,
+				scriptCharset: 'UTF-8',
+				dataType : 'text',
+				success : function(data) {
+					var innerHTML = "<tr><td>联系电话</td><td>城市小区房屋信息</td>";
+					
+					if(data == '' || data == 'fileNotFound'){
+						$('#customerInfo').html(innerHTML + '<tr><td>无数据</td></tr>');
+					}else{
+						
+						var customerInfos = data.split("=====");
+						for(var i = 0 ; i < customerInfos.length; i ++){
+							if(customerInfos[i] == ''){
+								break;	
+							}
+							var cs = customerInfos[i].split("###");
+							innerHTML += '<tr>' + '<td>' + cs[2] + '</td>' + 
+										  		  '<td>城市:' + cs[0] + '<br/>面积:' + cs[1] + '<br/>小区:' + cs[3] + '<br>' + 
+										  		  	cs[4] + '室' + cs[5] + '厅' + cs[6] + '卫' + cs[7] + '阳台' + '</td>' + '</tr>';
+						}
+						$('#customerInfo').html(innerHTML);
+					}
+					
+				},
+				error : function(data) {
+					alert('亲，服务器繁忙，请稍后再试！')
+				}
+			});
+		});
+	});
+</script>
+</html>
