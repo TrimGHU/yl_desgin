@@ -1,7 +1,10 @@
 <ion-view view-title="个性搭配详情" id="details">
     <ion-content delegate-handle="myscroll" onscroll="testScroll()">
         <div class="details-img">
-            <img src="images/798.jpg">
+            <img src="images/B_舒适休闲北欧/1.jpg" ng-if="detailTopSrc[0]">
+            <img src="images/B_舒适休闲北欧/2.jpg" ng-if="detailTopSrc[1]">
+            <img src="images/B_舒适休闲北欧/3.jpg" ng-if="detailTopSrc[2]">
+            <img src="images/B_舒适休闲北欧/4.jpg" ng-if="detailTopSrc[3]">
         </div>
         <div ng-init="detailsInitData()">
             <div class="details-door" ng-repeat="data in detailsData">

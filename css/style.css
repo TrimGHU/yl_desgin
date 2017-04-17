@@ -32,7 +32,8 @@ textarea{resize:none;}
 
 /*图片模态层背景颜色*/
 .popup-container{
-    background-color: rgba(0,0,0,.7)!important;
+    border: 3px #0a9dc7 solid;
+    background-color: rgba(0,0,0,.5)!important;
 }
 
 #home div.img>div.pic:nth-child(2n){
@@ -94,7 +95,8 @@ textarea{resize:none;}
 
 }
 .package-name{
-    font-size: 16px;
+    margin-top: 5px;
+    font-size: 20px;
 }
 .calculate-top .img-bottom>img{
     width: 100%;
@@ -409,7 +411,7 @@ textarea{resize:none;}
 }
 .design-page{
    text-align: center;
-    margin-top: 80px;
+    margin-top: 20px;
  }
 .design-page .design-brand{
     color: #007aff;
@@ -434,7 +436,7 @@ textarea{resize:none;}
     color: #007aff;
     margin-bottom: 10px;
 }
-.design-page .design-address{
+.design-page .design-address, .type-margin-left{
     margin-left: 4%;
 }
 .design-page .lookBtn{
@@ -495,32 +497,34 @@ textarea{resize:none;}
 }
 .shadow .shadow-unit1{
     position: absolute;
-    right: 20px;
+    right: 24px;
     top:24%;
+    font-size: 22px;
 }
 .shadow .line{
     width: 1px;
-    height: 18px;
+    height: 21px;
     border: 1px solid yellow;
     transform: rotate(40deg);
     -o-transform: rotate(40deg);
     -webkit-transform: rotate(80deg);
     -moz-transform: rotate(40deg);
     position: absolute;
-    right: 25px;
-    top: 45%;
+    right: 34px;
+    top: 42%;
 }
 .shadow .shadow-unit2{
     position: absolute;
-    right: 22px;
-    top: 55%;
+    right: 25px;
+    top: 52%;
+    font-size: 22px;
 }
 .shadow .shadow-unit3{
     position: absolute;
-    right: 13px;
-    top: 52%;
-    font-size: 14px;
-    -webkit-transform:scale(0.8);
+    right: 17px;
+    top: 50%;
+    font-size: 16px;
+    -webkit-transform: scale(0.8);
 }
 
 /*
@@ -687,6 +691,7 @@ textarea{resize:none;}
     background-color: rgba(249,249,249,1);
     float: left;
     text-align: center;
+    font-size: 16px;
 }
 .SwitchBackground_btn{
     background-color: rgba(0,160,96,1)!important;
@@ -829,7 +834,7 @@ textarea{resize:none;}
 .Calculation-mu-bot li>img{
     width: 100%;
 }
-.active{
+.activeBorder{
     border: 2px solid #0a9dc7!important;
 }
 .Calculation-chu>img{
@@ -911,4 +916,33 @@ textarea{resize:none;}
 }
 .chooseMess-li-mess>img{
     width: 100%;
+}
+
+#charaDesign{
+    width: 100%;
+    padding: 5% 2% 0 2%;
+    text-align: center;
+}
+.design-text{
+    display: block;
+    border: 1px solid #979797;
+    padding: 5px 10px 8px 10px;
+    margin-top: 10%;
+    border-radius: 6px;
+}
+.design-text-h{
+    font-size: 20px;
+    color: #339f2f;
+    text-align: center;
+}
+.design-text-p{
+    font-size: 16px;
+    text-align: left;
+}
+.onlineTab{
+    width: 80%;
+    height: 104px;
+    float: left;
+    overflow: hidden;
+    position: relative;
 }

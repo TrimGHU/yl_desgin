@@ -118,7 +118,7 @@ angular.module("myApp").controller("homeCtrl",function($scope,CaseDetailFactory,
                 //循环other数组
                 for(var i=0;i<other.length;i++){
                     //把轮播ion-slide标签添加到img标签中，作为渲染页面时显示的内容，下面的other[i].img是获取other里面的图片路径
-                    var divImg='<ion-slide><div class="box"><img src="'+other[i].img+'" height="155" width="100%"></div></ion-slide>';
+                    var divImg='<ion-slide><div class="box"><img src="'+other[i].img+'" height="250" width="100%"></div></ion-slide>';
                     //把制作成功的标签写入空字符串里面
                     img+=divImg
                 }

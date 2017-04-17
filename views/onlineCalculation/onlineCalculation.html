@@ -5,16 +5,12 @@
                 <div class="onlineCalculation-ul-l" ng-click="onlineCalLeft()" ng-class="{disable_btn: activeDisableTab == 0}">
                     <i class="icon ion-arrow-left-a"></i>
                 </div>
-                <div style="width: 80%;height: 104px;float: left;overflow: hidden;position: relative;">
+                <div class="onlineTab">
                     <ul class="onlineCal-ul-img clearfloat" ng-style="imgObj">
                         <li ng-click="SwitchContentBtn(0)" ng-class="{SwitchBackground_btn: SwitchBackgroundT[0]==true}">
                             <img src="images/cal/liImg/zongH.png">
-                            <p>综合服务包</p>
+                            <p>综合服务</p>
                         </li>
-                        <!--<li ng-click="SwitchContentBtn(1)">-->
-                            <!--<img src="images/cal/liImg/geX.png">-->
-                            <!--<p>个性设计</p>-->
-                        <!--</li>-->
                         <li ng-click="SwitchContentBtn(2)" ng-class="{SwitchBackground_btn: SwitchBackgroundT[2]==true}">
                             <img src="images/cal/liImg/diB.png">
                             <p>地板</p>
@@ -57,10 +53,6 @@
                             联体插方*25、一开单带5孔*2、空调插*3电视插*3、电话插*3、电脑插*3</i></p>
                     </div>
                 </div>
-                <!--<div class="onlineCalculation-cal">-->
-                    <!--<p class="p6">总价：<span>7654</span>元+<span>0</span>元个性化项目</p>-->
-                    <!--<input type="button" value="预约量房" class="onlineCalculation-btn">-->
-                <!--</div>-->
             </div>
             <div class="Calculation-mu" ng-if="SwitchContentT[7]" ng-init="initonLineData()">
                 <p class="p1"><span>598</span>超惠套餐包中包含室内木门，且不限数量</p>
@@ -77,7 +69,7 @@
                 </div>
                 <div class="Calculation-mu-bot">
                     <ul class="clearfloat">
-                        <li ng-repeat="ulSrc in sampleData.calMu.ulSrc track by $index" ng-click="CalculationBtn($index)" ng-class="{active: activeTab == $index}"><img ng-src="{{ulSrc.src}}"></li>
+                        <li ng-repeat="ulSrc in sampleData.calMu.ulSrc track by $index" ng-click="CalculationBtn($index)" ng-class="{activeBorder: activeTab == $index}"><img ng-src="{{ulSrc.src}}"></li>
                     </ul>
                 </div>
             </div>
@@ -100,10 +92,10 @@
                 </div>
                 <div class="Calculation-mu-bot">
                     <ul class="clearfloat">
-                        <li ng-click="CalculationBtn(0)" ng-class="{active: activeTab == 0}"><img src="images/cal/cal_di1.jpg"></li>
-                        <li ng-click="CalculationBtn(1)" ng-class="{active: activeTab == 1}"><img src="images/cal/cal_di2.jpg"></li>
-                        <li ng-click="CalculationBtn(2)" ng-class="{active: activeTab == 2}"><img src="images/cal/cal_di3.jpg"></li>
-                        <li ng-click="CalculationBtn(3)" ng-class="{active: activeTab == 3}"><img src="images/cal/cal_di4.jpg"></li>
+                        <li ng-click="CalculationBtn(0)" ng-class="{activeBorder: activeTab == 0}"><img src="images/cal/cal_di1.jpg"></li>
+                        <li ng-click="CalculationBtn(1)" ng-class="{activeBorder: activeTab == 1}"><img src="images/cal/cal_di2.jpg"></li>
+                        <li ng-click="CalculationBtn(2)" ng-class="{activeBorder: activeTab == 2}"><img src="images/cal/cal_di3.jpg"></li>
+                        <li ng-click="CalculationBtn(3)" ng-class="{activeBorder: activeTab == 3}"><img src="images/cal/cal_di4.jpg"></li>
                     </ul>
                 </div>
             </div>
@@ -147,8 +139,8 @@
                     </div>
                     <div class="Calculation-mu-bot">
                         <ul class="clearfloat">
-                            <li ng-click="CalculationBtn(0)" ng-class="{active: activeTab == 0}"><img src="images/cal/cal_wei1.jpg"></li>
-                            <li ng-click="CalculationBtn(1)" ng-class="{active: activeTab == 1}"><img src="images/cal/cal_wei2.jpg"></li>
+                            <li ng-click="CalculationBtn(0)" ng-class="{activeBorder: activeTab == 0}"><img src="images/cal/cal_wei1.jpg"></li>
+                            <li ng-click="CalculationBtn(1)" ng-class="{activeBorder: activeTab == 1}"><img src="images/cal/cal_wei2.jpg"></li>
                         </ul>
                     </div>
                 </div>
@@ -168,8 +160,8 @@
                     </div>
                     <div class="Calculation-mu-bot">
                         <ul class="clearfloat">
-                            <li ng-click="CalculationWei(0)" ng-class="{active: activeWei == 0}"><img src="images/cal/cal_wei3.jpg"></li>
-                            <li ng-click="CalculationWei(1)" ng-class="{active: activeWei == 1}"><img src="images/cal/cal_wei4.jpg"></li>
+                            <li ng-click="CalculationWei(0)" ng-class="{activeBorder: activeWei == 0}"><img src="images/cal/cal_wei3.jpg"></li>
+                            <li ng-click="CalculationWei(1)" ng-class="{activeBorder: activeWei == 1}"><img src="images/cal/cal_wei4.jpg"></li>
                         </ul>
                     </div>
                 </div>
@@ -186,8 +178,8 @@
                     </div>
                     <div class="Calculation-mu-bot">
                         <ul class="clearfloat">
-                            <li ng-click="CalculationDeng(0)" ng-class="{active: activeDeng == 0}"><img src="images/cal/cal_wei5.jpg"></li>
-                            <li ng-click="CalculationDeng(1)" ng-class="{active: activeDeng == 1}"><img src="images/cal/cal_wei6.jpg"></li>
+                            <li ng-click="CalculationDeng(0)" ng-class="{activeBorder: activeDeng == 0}"><img src="images/cal/cal_wei5.jpg"></li>
+                            <li ng-click="CalculationDeng(1)" ng-class="{activeBorder: activeDeng == 1}"><img src="images/cal/cal_wei6.jpg"></li>
                         </ul>
                     </div>
                 </div>
@@ -204,8 +196,8 @@
                     </div>
                     <div class="Calculation-mu-bot">
                         <ul class="clearfloat">
-                            <li ng-click="CalculationLong(0)" ng-class="{active: activeLong == 0}"><img src="images/cal/cal_wei7.jpg"></li>
-                            <li ng-click="CalculationLong(1)" ng-class="{active: activeLong == 1}"><img src="images/cal/cal_wei8.jpg"></li>
+                            <li ng-click="CalculationLong(0)" ng-class="{activeBorder: activeLong == 0}"><img src="images/cal/cal_wei7.jpg"></li>
+                            <li ng-click="CalculationLong(1)" ng-class="{activeBorder: activeLong == 1}"><img src="images/cal/cal_wei8.jpg"></li>
                         </ul>
                     </div>
                 </div>
@@ -243,9 +235,9 @@
                 </div>
                 <div class="Calculation-mu-bot">
                     <ul class="clearfloat">
-                        <li ng-click="CalculationBtn(0)" ng-class="{active: activeTab == 0}"><img src="images/cal/cal_diao1.jpg"></li>
-                        <li ng-click="CalculationBtn(1)" ng-class="{active: activeTab == 1}"><img src="images/cal/cal_diao2.jpg"></li>
-                        <li ng-click="CalculationBtn(2)" ng-class="{active: activeTab == 2}"><img src="images/cal/cal_diao3.jpg"></li>
+                        <li ng-click="CalculationBtn(0)" ng-class="{activeBorder: activeTab == 0}"><img src="images/cal/cal_diao1.jpg"></li>
+                        <li ng-click="CalculationBtn(1)" ng-class="{activeBorder: activeTab == 1}"><img src="images/cal/cal_diao2.jpg"></li>
+                        <li ng-click="CalculationBtn(2)" ng-class="{activeBorder: activeTab == 2}"><img src="images/cal/cal_diao3.jpg"></li>
                     </ul>
                 </div>
                 <div class="Calculation-mu-top clearfloat">
@@ -288,8 +280,8 @@
                     </div>
                     <div class="Calculation-mu-bot">
                         <ul class="clearfloat">
-                            <li ng-click="CalculationBtnCi(0)" ng-class="{active: activeTabImg == 0}"><img src="images/cal/cal_ci1.jpg"></li>
-                            <li ng-click="CalculationBtnCi(1)" ng-class="{active: activeTabImg == 1}"><img src="images/cal/cal_ci2.jpg"></li>
+                            <li ng-click="CalculationBtnCi(0)" ng-class="{activeBorder: activeTabImg == 0}"><img src="images/cal/cal_ci1.jpg"></li>
+                            <li ng-click="CalculationBtnCi(1)" ng-class="{activeBorder: activeTabImg == 1}"><img src="images/cal/cal_ci2.jpg"></li>
                         </ul>
                     </div>
                 </div>
@@ -311,10 +303,10 @@
                     </div>
                     <div class="Calculation-mu-bot">
                         <ul class="clearfloat">
-                            <li ng-click="CalculationBtnCi(0)" ng-class="{active: activeTabImg == 0}"><img src="images/cal/cal_ci3.jpg"></li>
-                            <li ng-click="CalculationBtnCi(1)" ng-class="{active: activeTabImg == 1}"><img src="images/cal/cal_ci4.jpg"></li>
-                            <li ng-click="CalculationBtnCi(2)" ng-class="{active: activeTabImg == 2}"><img src="images/cal/cal_ci5.jpg"></li>
-                            <li ng-click="CalculationBtnCi(3)" ng-class="{active: activeTabImg == 3}"><img src="images/cal/cal_ci6.jpg"></li>
+                            <li ng-click="CalculationBtnCi(0)" ng-class="{activeBorder: activeTabImg == 0}"><img src="images/cal/cal_ci3.jpg"></li>
+                            <li ng-click="CalculationBtnCi(1)" ng-class="{activeBorder: activeTabImg == 1}"><img src="images/cal/cal_ci4.jpg"></li>
+                            <li ng-click="CalculationBtnCi(2)" ng-class="{activeBorder: activeTabImg == 2}"><img src="images/cal/cal_ci5.jpg"></li>
+                            <li ng-click="CalculationBtnCi(3)" ng-class="{activeBorder: activeTabImg == 3}"><img src="images/cal/cal_ci6.jpg"></li>
                         </ul>
                     </div>
                 </div>
@@ -336,10 +328,10 @@
                     </div>
                     <div class="Calculation-mu-bot">
                         <ul class="clearfloat">
-                            <li ng-click="CalculationBtnCi(0)" ng-class="{active: activeTabImg == 0}"><img src="images/cal/cal_ci7.jpg"></li>
-                            <li ng-click="CalculationBtnCi(1)" ng-class="{active: activeTabImg == 1}"><img src="images/cal/cal_ci8.jpg"></li>
-                            <li ng-click="CalculationBtnCi(2)" ng-class="{active: activeTabImg == 2}"><img src="images/cal/cal_ci9.jpg"></li>
-                            <li ng-click="CalculationBtnCi(3)" ng-class="{active: activeTabImg == 3}"><img src="images/cal/cal_ci10.jpg"></li>
+                            <li ng-click="CalculationBtnCi(0)" ng-class="{activeBorder: activeTabImg == 0}"><img src="images/cal/cal_ci7.jpg"></li>
+                            <li ng-click="CalculationBtnCi(1)" ng-class="{activeBorder: activeTabImg == 1}"><img src="images/cal/cal_ci8.jpg"></li>
+                            <li ng-click="CalculationBtnCi(2)" ng-class="{activeBorder: activeTabImg == 2}"><img src="images/cal/cal_ci9.jpg"></li>
+                            <li ng-click="CalculationBtnCi(3)" ng-class="{activeBorder: activeTabImg == 3}"><img src="images/cal/cal_ci10.jpg"></li>
                         </ul>
                     </div>
                 </div>

@@ -158,7 +158,211 @@
     "mu":{
       "muSrc":"images/icon_package1.png",
       "muName":"木门",
-      "muDes":"798精致升级包中包含室内木门",
+      "muDes":"799精致升级包中包含室内木门",
+      "muChoose":"木门(3选1)：",
+      "muList":[
+        {
+          "src":"images/mu1.jpg",
+          "title":"派的木门",
+          "type":"型号：PAD001",
+          "standard":"规格：2200*900*300",
+          "describe":"描述：免漆门"
+        },
+        {
+          "src":"images/mu1.jpg",
+          "title":"派的木门",
+          "type":"型号：PBL001",
+          "standard":"规格：2200*900*300",
+          "describe":"描述：免漆门"
+        },
+        {
+          "src": "images/mu1.jpg",
+          "title": "派的木门",
+          "type": "型号：PBL003",
+          "standard": "规格：2200*900*300",
+          "describe": "描述：免漆门"
+        }
+      ]
+    },
+    "di":{
+      "muSrc":"images/icon_package2.png",
+      "muName":"地板",
+      "muDes":"798精致升级包中包含室内地板",
+      "mu-choose":"地板(9选1)：",
+      "muList":[
+        {
+          "src":"images/di1.jpg",
+          "title":"圣象e家",
+          "type":"型号：NF1301",
+          "standard":"规格：1286*194*10",
+          "describe":"描述：单位平方米"
+        },
+        {
+          "src":"images/di2.jpg",
+          "title":"圣象e家",
+          "type":"型号：NF1302",
+          "standard":"规格：1286*194*10",
+          "describe":"描述：单位平方米"
+        },
+        {
+          "src": "images/di3.jpg",
+          "title": "圣象e家",
+          "type": "型号：NF1303",
+          "standard": "规格：1286*194*10",
+          "describe": "描述：单位平方米"
+        },
+        {
+          "src": "images/di4.jpg",
+          "title": "圣象e家",
+          "type": "型号：NF1101",
+          "standard": "规格：1286*194*10",
+          "describe": "描述：单位平方米"
+        },
+        {
+          "src": "images/di5.jpg",
+          "title": "圣象e家",
+          "type": "型号：NF1102",
+          "standard": "规格：1286*194*10",
+          "describe": "描述：单位平方米"
+        },
+        {
+          "src": "images/di6.jpg",
+          "title": "圣象e家",
+          "type": "型号：NF1103",
+          "standard": "规格：1286*194*10",
+          "describe": "描述：单位平方米"
+        },
+        {
+          "src": "images/di7.jpg",
+          "title": "圣象e家",
+          "type": "型号：NF6201",
+          "standard": "规格：1286*194*10",
+          "describe": "描述：单位平方米"
+        },
+        {
+          "src": "images/di8.jpg",
+          "title": "圣象e家",
+          "type": "型号：NF6202",
+          "standard": "规格：1286*194*10",
+          "describe": "描述：单位平方米"
+        },
+        {
+          "src": "images/di9.jpg",
+          "title": "圣象e家",
+          "type": "型号：NF6203",
+          "standard": "规格：1286*194*10",
+          "describe": "描述：单位平方米"
+        }
+      ]
+    }
+  },
+  "light":{
+    "mu":{
+      "muSrc":"images/icon_package1.png",
+      "muName":"木门",
+      "muDes":"799精致升级包中包含室内木门",
+      "muChoose":"木门(3选1)：",
+      "muList":[
+        {
+          "src":"images/mu1.jpg",
+          "title":"派的木门",
+          "type":"型号：PAD001",
+          "standard":"规格：2200*900*300",
+          "describe":"描述：免漆门"
+        },
+        {
+          "src":"images/mu1.jpg",
+          "title":"派的木门",
+          "type":"型号：PBL001",
+          "standard":"规格：2200*900*300",
+          "describe":"描述：免漆门"
+        },
+        {
+          "src": "images/mu1.jpg",
+          "title": "派的木门",
+          "type": "型号：PBL003",
+          "standard": "规格：2200*900*300",
+          "describe": "描述：免漆门"
+        }
+      ]
+    },
+    "di":{
+      "muSrc":"images/icon_package2.png",
+      "muName":"地板",
+      "muDes":"798精致升级包中包含室内地板",
+      "mu-choose":"地板(9选1)：",
+      "muList":[
+        {
+          "src":"images/di1.jpg",
+          "title":"圣象e家",
+          "type":"型号：NF1301",
+          "standard":"规格：1286*194*10",
+          "describe":"描述：单位平方米"
+        },
+        {
+          "src":"images/di2.jpg",
+          "title":"圣象e家",
+          "type":"型号：NF1302",
+          "standard":"规格：1286*194*10",
+          "describe":"描述：单位平方米"
+        },
+        {
+          "src": "images/di3.jpg",
+          "title": "圣象e家",
+          "type": "型号：NF1303",
+          "standard": "规格：1286*194*10",
+          "describe": "描述：单位平方米"
+        },
+        {
+          "src": "images/di4.jpg",
+          "title": "圣象e家",
+          "type": "型号：NF1101",
+          "standard": "规格：1286*194*10",
+          "describe": "描述：单位平方米"
+        },
+        {
+          "src": "images/di5.jpg",
+          "title": "圣象e家",
+          "type": "型号：NF1102",
+          "standard": "规格：1286*194*10",
+          "describe": "描述：单位平方米"
+        },
+        {
+          "src": "images/di6.jpg",
+          "title": "圣象e家",
+          "type": "型号：NF1103",
+          "standard": "规格：1286*194*10",
+          "describe": "描述：单位平方米"
+        },
+        {
+          "src": "images/di7.jpg",
+          "title": "圣象e家",
+          "type": "型号：NF6201",
+          "standard": "规格：1286*194*10",
+          "describe": "描述：单位平方米"
+        },
+        {
+          "src": "images/di8.jpg",
+          "title": "圣象e家",
+          "type": "型号：NF6202",
+          "standard": "规格：1286*194*10",
+          "describe": "描述：单位平方米"
+        },
+        {
+          "src": "images/di9.jpg",
+          "title": "圣象e家",
+          "type": "型号：NF6203",
+          "standard": "规格：1286*194*10",
+          "describe": "描述：单位平方米"
+        }
+      ]
+    }
+  },
+  "luxury":{
+    "mu":{
+      "muSrc":"images/icon_package1.png",
+      "muName":"木门",
+      "muDes":"799精致升级包中包含室内木门",
       "muChoose":"木门(3选1)：",
       "muList":[
         {

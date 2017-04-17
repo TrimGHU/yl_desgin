@@ -33,19 +33,96 @@
         -webkit-transform: scale(0.8);
     }
     .shadow .shadow-num {
-        font-size: 30px;
+        font-size: 28px;
+    }
+    .shadow .shadow-unit1{
+        position: absolute;
+        right: 20px;
+        top: 25%;
+        font-size: 20px;
     }
     .package-name {
         font-size: 14px;
+    }
+    .shadow .line{
+        width: 1px;
+        height: 16px;
+        border: 1px solid yellow;
+        transform: rotate(40deg);
+        -o-transform: rotate(40deg);
+        -webkit-transform: rotate(80deg);
+        -moz-transform: rotate(40deg);
+        position: absolute;
+        right: 29px;
+        top: 43%;
+    }
+    .shadow .shadow-unit2{
+        position: absolute;
+        right: 20px;
+        top: 52%;
+        font-size: 20px;
+    }
+    .shadow .shadow-unit3{
+        right: 13px;
+        font-size: 14px;
+    }
+    .package-name{
+        margin-top: 0;
     }
     /*regist*/
     .forecast-main .promise{
         font-size: 14px;
     }
+
+    .design-text-p{
+        font-size: 13px;
+        line-height: 18px;
+    }
+    .design-text-h {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    /*onlineCal*/
+    .onlineCal-ul-img>li{
+        font-size: 14px;
+    }
+    .onlineCalculation .p1{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .onlineCalculation .p2{
+        line-height: 14px;
+    }
+    .onlineCalculation .p3 {
+        font-size: 16px;
+        line-height: 32px;
+    }
+    .onlineCalculation .p3 i{
+        left:90px;
+    }
+    .onlineCalculation .p4, .onlineCalculation .p5{
+        font-size: 14px;
+    }
+
+    .onlineCalculation-ul-l, .onlineCal-ul-img, .onlineCal-ul-img>li, .onlineCalculation-ul-r{
+        height: 94px;
+    }
+    .onlineTab{
+        height: 94px;
+    }
+    .Calculation-mu-topP p{
+        font-size: 14px;
+        line-height: 20px;
+    }
 }
 @media screen and (min-width: 330px) and (max-width: 375px) {
+
     .design-page{
-        margin-top: 120px;
+        margin-top: 10px;
+    }
+    .shadow .shadow-num{
+        font-size: 30px;
     }
 }
 @media screen and (min-width: 380px) and (max-width: 414px) {
@@ -138,41 +215,36 @@
         font-size: 24px;
         -webkit-transform: scale(0.8);
     }
+    .list-li-top .shadow{
+        padding-top: 29%;
+    }
     .shadow .shadow-num {
-        font-size: 30px;
+        font-size: 70px;
     }
     .shadow .shadow-unit1 {
         right: 62px;
-        font-size: 20px;
+        font-size: 30px;
+        top: 34%
     }
     .shadow .line {
-        width: 1px;
-        height: 27px;
-        border: 1px solid yellow;
-        transform: rotate(40deg);
-        -o-transform: rotate(40deg);
-        -webkit-transform: rotate(80deg);
-        -moz-transform: rotate(40deg);
-        position: absolute;
-        right: 70px;
-        top: 34%;
+        height: 31px;
+        right: 73px;
+        top: 43%;
     }
     .shadow .shadow-unit2 {
-        position: absolute;
-        right: 63px;
-        top: 45%;
-        font-size: 20px;
+        right: 61px;
+        top: 53%;
+        font-size: 30px;
     }
     .shadow .shadow-unit3 {
-        position: absolute;
-        right: 52px;
-        top: 42%;
-        font-size: 18px;
-        -webkit-transform: scale(0.8);
+        right: 50px;
+        top: 51%;
+        font-size: 25px;
     }
     .package-name {
-        font-size: 22px;
-        margin-top: 5px;
+        font-size: 34px;
+        margin-top: 12px;
+        line-height: 40px;
     }
     /*regist*/
     .forecast-main>p {
@@ -184,7 +256,7 @@
     }
 
     .design-page{
-        margin-top: 220px;
+        margin-top: -18px;
     }
     .design-page .design-inter{
         line-height: 64px;
@@ -203,7 +275,7 @@
     }
     .design-page .design-address, .design-page .designtype, .design-page .lookBtn {
         width: 92%;
-        height: 54px;
+        height: 64px;
         /* margin-left: 4%; */
         border-radius: 5px;
         border: 1px solid #007aff;
@@ -212,5 +284,99 @@
         font-size: 26px;
         color: #007aff;
         margin-bottom: 16px;
+    }
+    .design-text-h{
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .design-text-p {
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .design-list .design-list-li{
+        margin-left: 24px;
+    }
+
+    /**个性搭配*/
+    .onlineCalculation-ul-l, .onlineCal-ul-img, .onlineCal-ul-img>li, .onlineCalculation-ul-r{
+        height: 200px;
+    }
+    .onlineTab{
+        height: 200px;
+    }
+    .disable_btn i, .onlineCalculation-ul-l i, .onlineCalculation-ul-r i{
+        font-size: 50px;
+    }
+    .onlineCalculation-ul-l {
+        padding-top: 80px;
+        padding-left: 13px;
+    }
+    .onlineCalculation-ul-r {
+        padding-top: 80px;
+        padding-left: 17px;
+    }
+    .onlineCal-ul-img>li{
+        font-size: 22px;
+    }
+    .Calculation-mu .p1, .Calculation-di .p1, .Calculation-chu .p1, .Calculation-wei .p1, .Calculation-diao .p1, .Calculation-mu-top>p{
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 4px;
+    }
+    .Calculation-mu-topP p {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    .Calculation-mu-topP span {
+        font-size: 20px;
+        line-height: 28px;
+        color: #666;
+    }
+    .Calculation-mu-topP .danwei {
+        font-size: 20px;
+        line-height: 26px;
+        color: #666;
+    }
+    .onlineCalculation-cal{
+        height: 50px;
+    }
+    .onlineCalculation-cal .p6 {
+        font-size: 24px;
+        line-height: 50px;
+    }
+    .onlineCalculation-btn {
+        width: 130px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 24px;
+    }
+    .Calculation-ci-ul li {
+        line-height: 50px;
+        font-size: 20px;
+    }
+    .onlineCalculation .p1{
+        font-size: 22px;
+    }
+    .onlineCalculation .p2 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .onlineCalculation .p3 {
+        font-size: 20px;
+        line-height: 38px;
+    }
+    .onlineCalculation .p3 i {
+        left: 113px;
+        top: -3px;
+        font-size: 14px;
+    }
+    .onlineCalculation .p4 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .onlineCalculation .p5 {
+        font-size: 18px;
+        margin-top: 2px;
+        line-height: 26px;
     }
 }

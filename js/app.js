@@ -67,7 +67,7 @@ app.config(function($stateProvider,$urlRouterProvider){
             templateUrl:'views/onlineCalculation/onlineCalculation.html',
             controller:'onlineCalculationCtrl'
         });
-    $urlRouterProvider.otherwise('/onlineCalculation');
+    $urlRouterProvider.otherwise('/design');
 
 });
 
