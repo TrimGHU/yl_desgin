@@ -80,7 +80,7 @@
     }
     .design-text-h {
         font-size: 16px;
-        line-height: 18px;
+        line-height: 22px;
     }
 
     /*onlineCal*/
@@ -115,6 +115,15 @@
         font-size: 14px;
         line-height: 20px;
     }
+
+    /*charaDesign*/
+    #charaDesign {
+        padding: 0% 2% 0 2%;
+    }
+    .design-page .design-address, .design-page .designtype, .design-page .lookBtn{
+        height: 40px;
+        line-height: 40px;
+    }
 }
 @media screen and (min-width: 330px) and (max-width: 375px) {
 
@@ -123,6 +132,15 @@
     }
     .shadow .shadow-num{
         font-size: 30px;
+    }
+
+    .design-text-h {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .design-text-p {
+        font-size: 16px;
+        line-height: 24px;
     }
 }
 @media screen and (min-width: 380px) and (max-width: 414px) {
@@ -256,7 +274,14 @@
     }
 
     .design-page{
-        margin-top: -18px;
+        margin-top: 10px;
+    }
+    .design-text {
+        padding: 5px 14px 8px 14px;
+    }
+    .design-text-p {
+        font-size: 28px;
+        line-height: 40px;
     }
     .design-page .design-inter{
         line-height: 64px;

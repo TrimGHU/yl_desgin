@@ -3,16 +3,66 @@
 <meta charset="UTF-8">
 <title>土巴兔装修</title>
 <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <style>
+        @media screen and (max-width: 320px) {
+
+        }
+        #contact{
+            width: 100%;
+            padding: 4% 0px 0 0;
+        }
+        #contact .contact-us{
+            font-size: 30px;
+            line-height: 2px;
+        }
+        #contact ul{
+            padding-left: 0;
+            width: 100%;
+        }
+        #contact li{
+            line-height: 30px;
+            font-size: 16px;
+            border-bottom: 1px solid #ccc;
+        }
+
+        @media screen and (min-width: 330px) and (max-width: 375px) {
+            #contact{
+                width: 100%;
+                /*padding: 46% 10px 0 10px;*/
+            }
+            #contact li{
+                line-height: 30px;
+                font-size: 18px;
+            }
+        }
+        @media screen and (min-width: 420px) and (max-width: 768px) {
+            #contact{
+                /*padding: 26% 0 0 0px;*/
+            }
+            #contact .contact-us {
+                font-size: 70px;
+            }
+            #contact li {
+                line-height: 60px;
+                font-size: 40px;
+            }
+        }
+    </style>
 </head>
 
-<body style="overflow-y: scroll;">
+<body style="background-color: #eee;margin: 15px;">
+<div id="contact">
+    <div style="width: 100%;border-radius: 10px;">
+        <img src="../../images/connectUs/connect.jpg" style="width: 100%;">
+    </div>
     <p class="contact-us">联系我们</p>
-    <ul>
-        <li>公司    ：长沙迎亮装饰设计工程有限公司</li>
+    <ul style="list-style: none">
+        <li>公司  ：长沙迎亮装饰设计工程有限公司</li>
         <li>联系人：董先生</li>
-        <li>电话    ：13319589391</li>
-        <li>地址    ：长沙市雨花区韶山中路489号万博汇名邸3栋309房</li>
-        <li>微信    ：</li>
+        <li>电话  ：13319589391</li>
+        <li>地址  ：长沙市雨花区韶山中路489号万博汇名邸3栋309房</li>
+        <li>微信  ：<img src="../../images/connectUs/dong_qcode.jpg" style="width: 100%;"></li>
     </ul>
+</div>
 </body>
 </html>
