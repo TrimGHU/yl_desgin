@@ -3,24 +3,24 @@
     "src":"images/average/1.jpg",
     "title":"超惠包",
     "num":699,
-    "href":"#/details?title=super"
+    "href":"#/details?title=t_699"
   },
   {
     "src":"images/average/2.jpg",
     "title":"精致包",
     "num":799,
-    "href":"#/details?title=delicate"
+    "href":"#/details?title=t_799"
   },
   {
     "src":"images/average/3.jpg",
     "title":"轻奢包",
     "num":899,
-    "href":"#/details?title=light"
+    "href":"#/details?title=t_899"
   },
   {
     "src":"images/average/4.jpg",
     "title":"豪华包",
     "num":1299,
-    "href":"#/details?title=luxury"
+    "href":"#/details?title=t_1299"
   }
 ]
