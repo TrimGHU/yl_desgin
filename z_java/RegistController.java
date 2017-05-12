@@ -27,6 +27,7 @@ public class RegistController {
 		String city = request.getParameter("city");
 		String area = request.getParameter("area");
 		String phone = request.getParameter("phone");
+		String targetPhone = request.getParameter("tphone");
 		
 		/**
 		String xiaoqu = request.getParameter("xiaoqu");
@@ -64,7 +65,7 @@ public class RegistController {
 		**/
 
 	    try {
-			Sms.sendSms("【迎亮装饰工程】目前有"+ phone + "咨询，"+ city +"的"+ area +"平米房屋装修事宜！", "18682009177");
+			Sms.sendSms("【迎亮装饰工程】目前有"+ phone + "咨询，"+ city +"的"+ area +"平米房屋装修事宜！", targetPhone);
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
