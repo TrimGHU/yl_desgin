@@ -1,4 +1,4 @@
-<ion-view view-title="个性搭配详情" id="details">
+<ion-view view-title="实惠套餐" id="details">
     <ion-content delegate-handle="myscroll" onscroll="testScroll()">
         <div class="details-img">
             <img src="images/average/1.jpg" ng-if="detailTopSrc[0]">
@@ -6,6 +6,10 @@
             <img src="images/average/3.jpg" ng-if="detailTopSrc[2]">
             <img src="images/average/4.jpg" ng-if="detailTopSrc[3]">
         </div>
+		<div class="design-text" style="margin-bottom: 10%;">
+			<h2 class="design-text-h">实惠套餐，轻松装修</h2>
+			<p class="design-text-p">实惠套餐以装修时实况为准，请点击联系我们添加专业人员微信进行实时咨询，提前预定装修可获得丰厚折扣哦！<a href="/wechat/html/views/connectUs/connect.html">点击链接^_^</a></p>
+		</div>
         <div ng-init="detailsInitData()">
             <div class="details-door" ng-repeat="data in detailsData">
                 <div class="details-door-top clearfloat">
@@ -38,31 +42,10 @@
         <div class="details-explain">
             <p class="details-explain-p">套餐说明</p>
             <ul class="details-explain-ul">
-                <li>•　厨房和卫生间的标配墙地砖均不含腰线及花片，不含拼花等特殊铺贴工艺；</li>
-                <li>•　整体家装内所有标配产品金额不能抵现金或转化为工程增项金额使用；</li>
-                <li>•　整体家装定制非标或增加个性化施工均需要加工期；</li>
-                <li>•　120㎡以下的户型标配一个卫生间，120㎡（含120㎡）—160㎡的户型标配两个卫生间，标配外每增加一个卫生间需增加6980；</li>
-                <li>•　甲方（客户）外购产品，安装费用需按照个性化要求单独计价；</li>
-                <li>•　不包含承重结构、建筑门窗、燃气、暖气、空调系统、新风系统、对讲系统等；</li>
-                <li>•　内门不包含阳台门、入户门、厨房推拉门，修改墙体结构新增加的门以及窗套垭口；</li>
-                <li>•　涂料颜色限两种。如增加颜色，每增加一种颜色需要加300元调色费；</li>
-                <li>•　套餐不含税金，由甲方（客户）自行承担，税率按国家标准3.41%执行，如付首笔款时遇税率调整，另行通知。</li>
-                <li>•　垃圾清运只负责清运到小区内指定的垃圾站点，不负责外运。</li>
-                <li>•　橱柜仅限一字型、L型，含一组抽屉，不含拉篮及个性化装饰品；70M2-100M2（含）橱柜配置3+1（3米地柜+3米台面+1米吊柜）；100M2-120M2（含）橱柜配置4+2（4米地柜+4米台面+2米吊柜）120M2以上橱柜配置5+3（5米地柜+5米台面+3米吊柜）</li>
-                <li>•　厨房含铝扣板和300*300LED灯，卫生间含铝扣板吊顶；</li>
-                <li>•　屋内所有踢脚线标配木塑复合踢脚线。</li>
+                <li>•　899轻奢、1299豪华套餐包含全房硬装家具，吊顶设计。</li>
+                <li>•　套餐中所有实物若客户不满意，可与专业装修人员协商，在双方同意的情况下做出更换。</li>
+                <li>•　所有以上装修套餐内容仅做大体参考，装修时以实际情况为准。</li>
             </ul>
-            <div class="details-explain-intro clearfloat">
-                <p class="details-explain-p">综合服务包介绍</p>
-                <div class="explain-intro-l">
-                    <img src="images/intor.jpg">
-                </div>
-                <div class="explain-intro-r">
-                    <p>398.00综合服务包，<span>已包含在698超惠升级包中</span></p>
-                    <p>包含施工设计图、水电改造、防水处理、管家服务、包立管处理、瓷砖铺贴、墙地面找平。屋顶处理、施工辅料、赠送配件。</p>
-                    <p>包含的开关面板为西门子远景系列开关面板套餐：单开单控*7、单开双控*2、10A五孔*27、16A*3、防溅盒*4、浴霸插*1、电视插*2、网络插*1</p>
-                </div>
-            </div>
         </div>
     </ion-content>
 </ion-view>

@@ -9,22 +9,22 @@ angular.module("myApp").controller("detailsCtrl",function($scope,$http,CaseDetai
     var absUrl = $location.absUrl().split("title=")[1];
     console.log("absUrl="+absUrl);
     if(absUrl == '' || absUrl == undefined){
-        absUrl = 'super'
+        absUrl = 't_699'
     }
     for(var i=0; i<$scope.detailTopSrc.length; i++){
         $scope.detailTopSrc[i] = false;
     }
     switch (absUrl){
-        case "super":
+        case "t_699":
             $scope.detailTopSrc[0] = true;
             break;
-        case "delicate":
+        case "t_799":
             $scope.detailTopSrc[1] = true;
             break;
-        case "light":
+        case "t_899":
             $scope.detailTopSrc[2] = true;
             break;
-        case "luxury":
+        case "t_1299":
             $scope.detailTopSrc[3] = true;
             break;
     }
