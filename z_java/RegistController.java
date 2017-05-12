@@ -1,15 +1,10 @@
 package com.ylzssj.wechat;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -18,17 +13,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-/**
- * Copyright © 2017 HUGUI. All rights reserved.
- * 
- * @Title: RegistController.java
- * @Prject: wechat
- * @Package: com.ylzssj.wechat
- * @Description: TODO
- * @author: HuGui
- * @date: 2017年4月14日 上午10:48:12
- * @version: V1.0
- */
+import com.ylzssj.wechat.util.Sms;
 
 @Controller
 public class RegistController {
@@ -38,15 +23,18 @@ public class RegistController {
 	@RequestMapping("/regist")
 	@ResponseBody
 	public String regist(HttpServletRequest request, HttpServletResponse response) {
+		
 		String city = request.getParameter("city");
 		String area = request.getParameter("area");
 		String phone = request.getParameter("phone");
+		
+		/**
 		String xiaoqu = request.getParameter("xiaoqu");
 		String shi = request.getParameter("shi");
 		String ting = request.getParameter("ting");
 		String wei = request.getParameter("wei");
 		String yangtai = request.getParameter("yangtai");
-
+		
 		// 保存本地文件
 		DateFormat df = new SimpleDateFormat("YYYYMMdd");
 		String day = df.format(Calendar.getInstance().getTime());
@@ -72,6 +60,13 @@ public class RegistController {
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
+		}
+		**/
+
+	    try {
+			Sms.sendSms("【迎亮装饰工程】目前有"+ phone + "咨询，"+ city +"的"+ area +"平米房屋装修事宜！", "18682009177");
+		} catch (IOException e) {
+			e.printStackTrace();
 		}
 
 		return "success";
