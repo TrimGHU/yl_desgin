@@ -1,0 +1,205 @@
+<ion-view view-title="699个性搭配详情" id="onlineCalculation">
+    <ion-content delegate-handle="myscroll">
+        <div class="onlineCalculation">
+            <div class="onlineCalculation-ul clearfloat">
+                <div class="onlineCalculation-ul-l" ng-click="onlineCalLeft()" ng-class="{disable_btn: activeDisableTab == 0}">
+                    <i class="icon ion-arrow-left-a"></i>
+                </div>
+                <div class="onlineTab">
+                    <ul class="onlineCal-ul-img clearfloat" ng-style="imgObj">
+                        <li ng-click="SwitchContentBtn(0)" ng-class="{SwitchBackground_btn: SwitchBackgroundT[0]==true}">
+                            <img src="images/cal/liImg/zongH.png">
+                            <p>综合服务</p>
+                        </li>
+                        <li ng-click="SwitchContentBtn(2)" ng-class="{SwitchBackground_btn: SwitchBackgroundT[2]==true}">
+                            <img src="images/cal/liImg/diB.png">
+                            <p>地板</p>
+                        </li>
+                        <li ng-click="SwitchContentBtn(3)" ng-class="{SwitchBackground_btn: SwitchBackgroundT[3]==true}">
+                            <img src="images/cal/liImg/ciZ.png">
+                            <p>瓷砖</p>
+                        </li>
+                        <li ng-click="SwitchContentBtn(4)" ng-class="{SwitchBackground_btn: SwitchBackgroundT[4]==true}">
+                            <img src="images/cal/liImg/chuW.png">
+                            <p>橱柜</p>
+                        </li>
+                        <li ng-click="SwitchContentBtn(5)" ng-class="{SwitchBackground_btn: SwitchBackgroundT[5]==true}">
+                            <img src="images/cal/liImg/diaoD.png">
+                            <p>灯具</p>
+                        </li>
+                        <li ng-click="SwitchContentBtn(6)" ng-class="{SwitchBackground_btn: SwitchBackgroundT[6]==true}">
+                            <img src="images/cal/liImg/WeiY.png">
+                            <p>卫浴</p>
+                        </li>
+                        <li ng-click="SwitchContentBtn(7)" ng-class="{SwitchBackground_btn: SwitchBackgroundT[7]==true}">
+                            <img src="images/cal/liImg/MuM.png">
+                            <p>木门</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="onlineCalculation-ul-r" ng-click="onlineCalRight()" ng-class="{disable_btn: activeDisableTab == 100}">
+                    <i class="icon ion-arrow-right-a"></i>
+                </div>
+            </div>
+            <div class="Calculation-zong" ng-if="SwitchContentT[0]">
+                <div class="onlineCalculation-img">
+                    <img src="images/cal/onlineCalculation.jpg">
+					<div class="design-text" style="margin-top: 8%;">
+                        <p>•　899轻奢、1299豪华套餐包含全房硬装家具，吊顶设计。</p>
+                        <p>•　套餐中所有实物若客户不满意，可与专业装修人员协商，在双方同意的情况下做出更换。</p>
+                        <p>•　所有以上装修套餐内容仅做大体参考，装修时以实际情况为准。</p>
+					</div>
+                </div>
+            </div>
+            <div class="Calculation-mu" ng-if="SwitchContentT[7]" ng-init="initonLineData()">
+                <p class="p1"><span>699</span>超惠套餐包中包含室内木门，且不限数量</p>
+                <div class="Calculation-mu-top clearfloat">
+                    <div ng-repeat="imgSrc in sampleData.calMu.imgSrc track by $index">
+                        <img ng-src="{{imgSrc.src}}" ng-if="CalculationT[$index]">
+                    </div>
+                    <div class="Calculation-mu-topP">
+                        <p>{{sampleData.calMu.text}}</p>
+                        <div ng-repeat="imgType in sampleData.calMu.imgType track by $index">
+                            <span ng-if="CalculationT[$index]">{{imgType.type}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="Calculation-mu-bot">
+                    <ul class="clearfloat">
+                        <li ng-repeat="ulSrc in sampleData.calMu.ulSrc track by $index" ng-click="CalculationBtn($index)" ng-class="{activeBorder: activeTab == $index}"><img ng-src="{{ulSrc.src}}"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Calculation-di" ng-if="SwitchContentT[2]">
+                <p class="p1"><span>699</span>超惠套餐所含地板以装修时实况而定，以下仅供大体参考^_^！</p>
+                <div class="Calculation-mu-top clearfloat">
+                    <img ng-if="CalculationT[0]" src="images/cal/cal_di1.jpg">
+                    <img ng-if="CalculationT[1]" src="images/cal/cal_di2.jpg">
+                    <img ng-if="CalculationT[2]" src="images/cal/cal_di3.jpg">
+                    <img ng-if="CalculationT[3]" src="images/cal/cal_di4.jpg">
+                    <div class="Calculation-mu-topP">
+                        <p>鸿铭地板</p>
+                        <p class="jisun">规格：1220*170*80</p>
+                    </div>
+                </div>
+                <div class="Calculation-mu-bot">
+                    <ul class="clearfloat">
+                        <li ng-click="CalculationBtn(0)" ng-class="{activeBorder: activeTab == 0}"><img src="images/cal/cal_di1.jpg"></li>
+                        <li ng-click="CalculationBtn(1)" ng-class="{activeBorder: activeTab == 1}"><img src="images/cal/cal_di2.jpg"></li>
+                        <li ng-click="CalculationBtn(2)" ng-class="{activeBorder: activeTab == 2}"><img src="images/cal/cal_di3.jpg"></li>
+                        <li ng-click="CalculationBtn(3)" ng-class="{activeBorder: activeTab == 3}"><img src="images/cal/cal_di4.jpg"></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="Calculation-chu" ng-if="SwitchContentT[4]">
+                <p class="p1"><span>699</span>超惠套餐所含橱柜以装修时实况而定，以下仅供大体参考^_^！</p>
+                <img src="images/cal/cal_chu1.jpg">
+                <div class="Calculation-mu-top Calculation-mu-left  clearfloat">
+                    <p>金龙橱柜</p>
+                    <!--<p class="line"></p>-->
+                    <img src="images/chugui/1.jpg">
+                    <div class="Calculation-mu-topP">
+                        <p>金龙橱柜</p>
+                    </div>
+                </div>
+            </div>
+            <div class="Calculation-wei" ng-if="SwitchContentT[6]">
+                <p class="p1"><span>699</span>超惠套餐所含浴室柜、蹲便器、水箱、淋浴龙头、水槽以装修时实况而定，以下仅供大体参考^_^！</p>
+                <div style="border-top:1px solid #ccc;padding-top: 5px;">
+                    <div class="Calculation-mu-top clearfloat">
+                        <img ng-if="CalculationT[0]" src="images/wei/wei4_1.jpg">
+                        <div class="Calculation-mu-topP">
+                            <p ng-if="CalculationT[0]">瑞坤浴室柜</p>
+                            <span ng-if="CalculationT[0]">规格：可选</span>
+                            <!--<i class="danwei">单位：平方米</i>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Calculation-diao" ng-if="SwitchContentT[5]">
+                <p class="p1"><span>699</span>超惠套餐所含灯具以装修时实况而定，以下仅供大体参考^_^！</p>
+                <div class="Calculation-mu-top clearfloat">
+                    <img ng-if="true" src="images/diaoding/1.jpg">
+                    <div class="Calculation-mu-topP">
+                        <p>辉煌灯具</p>
+                    </div>
+                </div>
+               
+            </div>
+            <div class="Calculation-ci" ng-if="SwitchContentT[3]">
+                <p class="p1"><span>699</span>超惠套餐所含瓷砖以装修时实况而定，以下仅供大体参考^_^！</p>
+                <ul class="Calculation-ci-ul clearfloat">
+                    <li ng-class="{activeLi: activeLi == 0}" ng-click="activeLiBtn(0)">客厅大地砖</li>
+                    <li ng-class="{activeLi: activeLi == 1}" ng-click="activeLiBtn(1)">厨卫地砖</li>
+                    <li ng-class="{activeLi: activeLi == 2}" ng-click="activeLiBtn(2)">厨卫墙砖</li>
+                </ul>
+                <div ng-if="activeLiT[0]">
+                    <div class="Calculation-mu-top Calculation-mu-left  clearfloat">
+                        <img src="images/cal/cal_ci1.jpg" ng-if="activeLiTImg[0]">
+                        <img src="images/cal/cal_ci2.jpg" ng-if="activeLiTImg[1]">
+                        <div class="Calculation-mu-topP">
+                            <p>奢华王子陶瓷-客厅地砖</p>
+                            <p class="jisun">尺寸：300*300、300*600、600*600、800*800</p>
+                        </div>
+                    </div>
+                    <div class="Calculation-mu-bot">
+                        <ul class="clearfloat">
+                            <li ng-click="CalculationBtnCi(0)" ng-class="{activeBorder: activeTabImg == 0}"><img src="images/cal/cal_ci1.jpg"></li>
+                            <li ng-click="CalculationBtnCi(1)" ng-class="{activeBorder: activeTabImg == 1}"><img src="images/cal/cal_ci2.jpg"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div ng-if="activeLiT[1]">
+                    <div class="Calculation-mu-top Calculation-mu-left  clearfloat">
+                        <img src="images/cal/cal_ci3.jpg" ng-if="activeLiTImg[0]">
+                        <img src="images/cal/cal_ci4.jpg" ng-if="activeLiTImg[1]">
+                        <img src="images/cal/cal_ci5.jpg" ng-if="activeLiTImg[2]">
+                        <img src="images/cal/cal_ci6.jpg" ng-if="activeLiTImg[3]">
+                        <div class="Calculation-mu-topP">
+                            <p>奢华王子陶瓷-客厅地砖</p>
+                            <p class="jisun">尺寸：300*300、300*600、600*600、800*800</p>
+                        </div>
+                    </div>
+                    <div class="Calculation-mu-bot">
+                        <ul class="clearfloat">
+                            <li ng-click="CalculationBtnCi(0)" ng-class="{activeBorder: activeTabImg == 0}"><img src="images/cal/cal_ci3.jpg"></li>
+                            <li ng-click="CalculationBtnCi(1)" ng-class="{activeBorder: activeTabImg == 1}"><img src="images/cal/cal_ci4.jpg"></li>
+                            <li ng-click="CalculationBtnCi(2)" ng-class="{activeBorder: activeTabImg == 2}"><img src="images/cal/cal_ci5.jpg"></li>
+                            <li ng-click="CalculationBtnCi(3)" ng-class="{activeBorder: activeTabImg == 3}"><img src="images/cal/cal_ci6.jpg"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div ng-if="activeLiT[2]">
+                    <div class="Calculation-mu-top Calculation-mu-left  clearfloat">
+                        <img src="images/cal/cal_ci7.jpg" ng-if="activeLiTImg[0]">
+                        <img src="images/cal/cal_ci8.jpg" ng-if="activeLiTImg[1]">
+                        <img src="images/cal/cal_ci9.jpg" ng-if="activeLiTImg[2]">
+                        <img src="images/cal/cal_ci10.jpg" ng-if="activeLiTImg[3]">
+                        <div class="Calculation-mu-topP">
+                            <p>奢华王子陶瓷-客厅地砖</p>
+                            <p class="jisun">尺寸：300*300、300*600、600*600、800*800</p>
+                        </div>
+                    </div>
+                    <div class="Calculation-mu-bot">
+                        <ul class="clearfloat">
+                            <li ng-click="CalculationBtnCi(0)" ng-class="{activeBorder: activeTabImg == 0}"><img src="images/cal/cal_ci7.jpg"></li>
+                            <li ng-click="CalculationBtnCi(1)" ng-class="{activeBorder: activeTabImg == 1}"><img src="images/cal/cal_ci8.jpg"></li>
+                            <li ng-click="CalculationBtnCi(2)" ng-class="{activeBorder: activeTabImg == 2}"><img src="images/cal/cal_ci9.jpg"></li>
+                            <li ng-click="CalculationBtnCi(3)" ng-class="{activeBorder: activeTabImg == 3}"><img src="images/cal/cal_ci10.jpg"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="Calculation-ge"></div>
+            <!--<div class="onlineCalculation-cal">-->
+                <!--<p class="p6">总价：<span>7654</span>元+<span>0</span>元个性化项目</p>-->
+                <!--<input type="button" value="预约量房" class="onlineCalculation-btn">-->
+            <!--</div>-->
+        </div>
+
+    </ion-content>
+    <!-- 预约量房-->
+    <div class="onlineCalculation-cal">
+        <p class="p6">提前预定装修可得丰厚折扣！<a href="/wechat/html/views/regist/regist.html">点击链接^_^</a></p>
+    </div>
+</ion-view>

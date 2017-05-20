@@ -740,12 +740,13 @@ textarea{resize:none;}
     left:0;
     bottom:0;
     height: 30px;
-    background-color: #d1d3d6;
+    background-color: #65d669;
 }
 .onlineCalculation-cal .p6{
-    font-size: 16px;
+	font-size: 15px;
     line-height: 30px;
     color: #444;
+    font-weight: bold;
 }
 .onlineCalculation-cal .p6 span{
     color: rgba(254,105,11,1);

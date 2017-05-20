@@ -62,11 +62,23 @@ app.config(function($stateProvider,$urlRouterProvider){
         url:'/charaDesign',
         templateUrl:'views/charaDesign/charaDesign.html',
         controller:'charaDesignCtrl'
-    }).state('onlineCalculation',{//个性设计
-            url:'/onlineCalculation',
-            templateUrl:'views/onlineCalculation/onlineCalculation.html',
-            controller:'onlineCalculationCtrl'
-        });
+    }).state('onlineCalculation_699',{//个性设计
+		url:'/onlineCalculation_699',
+		templateUrl:'views/onlineCalculation/onlineCalculation_699.html',
+		controller:'onlineCalculationCtrl'
+	}).state('onlineCalculation_799',{//个性设计
+		url:'/onlineCalculation_799',
+		templateUrl:'views/onlineCalculation/onlineCalculation_799.html',
+		controller:'onlineCalculationCtrl'
+	}).state('onlineCalculation_899',{//个性设计
+		url:'/onlineCalculation_899',
+		templateUrl:'views/onlineCalculation/onlineCalculation_899.html',
+		controller:'onlineCalculationCtrl'
+	}).state('onlineCalculation_1299',{//个性设计
+		url:'/onlineCalculation_1299',
+		templateUrl:'views/onlineCalculation/onlineCalculation_1299.html',
+		controller:'onlineCalculationCtrl'
+	});
     $urlRouterProvider.otherwise('/design');
 
 });

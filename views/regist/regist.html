@@ -1,7 +1,7 @@
 <html lang="en" ng-app="myApp">
 <head>
 <meta charset="UTF-8">
-<title>装修登记</title>
+<title>免费报价</title>
 <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 <link href="../../css/style.css" rel="stylesheet" type="text/css">
 <link href="../../css/mediaScreen.css" rel="stylesheet" type="text/css">
@@ -61,8 +61,12 @@
 				</label>
 			</div>
 			<div style="margin: 10px 0 0 0;">
+				<input type="tel" id="tPhone" style="display:none" name="tphone" value="18682009177" >
 				<input type="tel" id="newPhone" name="phone"
-					placeholder="请输入真实号码，报价结果将发送到您的手机">
+					placeholder="请输入真实号码，专业装修人员与您及时沟通">
+			</div>
+			<div class="touch-input2" id="pricediv" style="display:none">
+				<input type="text" readonly="true" name="price" id="priceInput">
 			</div>
 			<input id="ask-form-submit" class="ptag-set" type="button" value="免费报价">
 		</form>
@@ -89,6 +93,7 @@
 			var area = $('#areaInput').val();
 			var phone = $('#newPhone').val();
 			var xiaoqu = $('#xiaoquInput').val();
+			var tphone = $('#tPhone').val();
 			
 			
 			if(city == ''){
@@ -111,13 +116,16 @@
 				return;
 			}
 			
+			$('#priceInput').val('装修费用大概：' + area * 850 + '元');
+			$('#pricediv').css('display','');
 
 			$.ajax({
-				url : 'http://112.74.168.63:8080/wechat/regist',
+				url : '/wechat/regist',
 				data : {
 					'city' : city,
 					'area' : area,
 					'phone' : phone,
+					'tphone' : tphone,
 					'xiaoqu' : xiaoqu,
 					'shi' : $('#secshi').val(),
 					'ting' : $('#secting').val(),
@@ -132,8 +140,6 @@
 					$('#areaInput').val('');
 					$('#newPhone').val('');
 					$('#xiaoquInput').val('');
-					
-					alert('已经提交您的请求，稍后会有专业人员联系您！');
 				},
 				error : function(data) {
 					alert('亲，服务器繁忙，请稍后再试！')

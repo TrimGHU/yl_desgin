@@ -7,14 +7,31 @@
       "muList":[
         {
 		  "muChoose":"",
-          "src":"images/mu1_1.jpg",
+          "src":"images/mu/mu1_2.jpg",
           "title":"迪派门业(生态门)",
           "type":"",
           "standard":"规格：900*2100",
           "describe":""
         },
         {
-          "src":"images/mu1_2.jpg",
+		  "muChoose":"",
+          "src":"images/mu/mumen2_1.jpg",
+          "title":"陶氏门业(双玻璃铝门层)",
+          "type":"",
+          "standard":"规格：800*2100",
+          "describe":""
+        },
+        {
+		  "muChoose":"",
+          "src":"images/mu/mumen2_2.jpg",
+          "title":"陶氏门业(双玻璃铝门层)",
+          "type":"",
+          "standard":"规格：800*2100",
+          "describe":""
+        },
+        {
+		  "muChoose":"",
+          "src":"images/mu/mumen2_3.jpg",
           "title":"陶氏门业(双玻璃铝门层)",
           "type":"",
           "standard":"规格：800*2100",
@@ -34,6 +51,30 @@
           "type":"",
           "standard":"规格：1220*170*80",
           "describe":""
+        },
+        {
+          "muChoose":"",
+          "src":"images/di1_2.jpg",
+          "title":"鸿铭地板",
+          "type":"",
+          "standard":"规格：1220*170*80",
+          "describe":""
+        },
+        {
+          "muChoose":"",
+          "src":"images/di1_3.jpg",
+          "title":"鸿铭地板",
+          "type":"",
+          "standard":"规格：1220*170*80",
+          "describe":""
+        },
+        {
+          "muChoose":"",
+          "src":"images/di1_4.jpg",
+          "title":"鸿铭地板",
+          "type":"",
+          "standard":"规格：1220*170*80",
+          "describe":""
         }
       ]
     },
@@ -44,10 +85,66 @@
       "muList":[
         {
           "muChoose":"",
-          "src": "images/wei/wei4_1.jpg",
+          "src": "images/wei/wei4_5.jpg",
           "title": "瑞坤浴室柜",
           "type": "",
-          "standard": "规格：可选",
+          "standard": "",
+          "describe": ""
+        },
+		{
+          "muChoose":"",
+          "src": "images/wei/wei4_6.jpg",
+          "title": "瑞坤浴室柜",
+          "type": "",
+          "standard": "",
+          "describe": ""
+        },
+		{
+          "muChoose":"",
+          "src": "images/wei/wei4_7.jpg",
+          "title": "瑞坤浴室柜",
+          "type": "",
+          "standard": "",
+          "describe": ""
+        },
+		{
+          "muChoose":"",
+          "src": "images/wei/wei4_8.jpg",
+          "title": "瑞坤浴室柜",
+          "type": "",
+          "standard": "",
+          "describe": ""
+        },
+		{
+          "muChoose":"",
+          "src": "images/wei/wei4_9.jpg",
+          "title": "瑞坤浴室柜",
+          "type": "",
+          "standard": "",
+          "describe": ""
+        },
+		{
+          "muChoose":"",
+          "src": "images/wei/wei4_10.jpg",
+          "title": "瑞坤浴室柜",
+          "type": "",
+          "standard": "",
+          "describe": ""
+        },
+		{
+          "muChoose":"",
+          "src": "images/wei/wei4_11.jpg",
+          "title": "瑞坤坐便器",
+          "type": "",
+          "standard": "",
+          "describe": ""
+        },
+		{
+          "muChoose":"",
+          "src": "images/wei/wei4_12.jpg",
+          "title": "瑞坤坐便器",
+          "type": "",
+          "standard": "",
           "describe": ""
         }
       ]
@@ -59,10 +156,42 @@
       "muList":[
         {				
           "muChoose":"",
-          "src":"images/diaoding/1.jpg",
+          "src":"images/diaoding/dengju_1.jpg",
           "title":"辉煌灯具",
           "type":"",
-          "standard":"规格：可选",
+          "standard":"",
+          "describe":""
+        },
+        {				
+          "muChoose":"",
+          "src":"images/diaoding/dengju_2.jpg",
+          "title":"辉煌灯具",
+          "type":"",
+          "standard":"",
+          "describe":""
+        },
+        {				
+          "muChoose":"",
+          "src":"images/diaoding/dengju_3.jpg",
+          "title":"辉煌灯具",
+          "type":"",
+          "standard":"",
+          "describe":""
+        },
+        {				
+          "muChoose":"",
+          "src":"images/diaoding/dengju_4.jpg",
+          "title":"辉煌灯具",
+          "type":"",
+          "standard":"",
+          "describe":""
+        },
+        {				
+          "muChoose":"",
+          "src":"images/diaoding/dengju_5.jpg",
+          "title":"辉煌灯具",
+          "type":"",
+          "standard":"",
           "describe":""
         }
       ]
@@ -74,7 +203,31 @@
       "muList":[
         {
           "muChoose":"",
-          "src":"images/cizhuan/1.jpg",
+          "src":"images/cizhuan/cizhuan_1.jpg",
+          "title":"奢华王子陶瓷",
+          "type":"",
+          "standard":"规格：300*300、300*600、600*600、800*800",
+          "describe":""
+        },
+        {
+          "muChoose":"",
+          "src":"images/cizhuan/cizhuan_2.jpg",
+          "title":"奢华王子陶瓷",
+          "type":"",
+          "standard":"规格：300*300、300*600、600*600、800*800",
+          "describe":""
+        },
+        {
+          "muChoose":"",
+          "src":"images/cizhuan/cizhuan_3.jpg",
+          "title":"奢华王子陶瓷",
+          "type":"",
+          "standard":"规格：300*300、300*600、600*600、800*800",
+          "describe":""
+        },
+        {
+          "muChoose":"",
+          "src":"images/cizhuan/cizhuan_4.jpg",
           "title":"奢华王子陶瓷",
           "type":"",
           "standard":"规格：300*300、300*600、600*600、800*800",
@@ -89,7 +242,23 @@
       "muList":[
         {
           "muChoose":"",
-          "src":"images/chugui/1.jpg",
+          "src":"images/chugui/chugui_1.jpg",
+          "title":"金龙橱柜",
+          "type":"",
+          "standard":"",
+          "describe":""
+        },
+        {
+          "muChoose":"",
+          "src":"images/chugui/chugui_2.jpg",
+          "title":"金龙橱柜",
+          "type":"",
+          "standard":"",
+          "describe":""
+        },
+        {
+          "muChoose":"",
+          "src":"images/chugui/chugui_3.jpg",
           "title":"金龙橱柜",
           "type":"",
           "standard":"",
@@ -106,14 +275,28 @@
       "muList":[
         {
 		  "muChoose":"",
-          "src":"images/mu1_1.jpg",
+          "src":"images/mu/mu1_2.jpg",
           "title":"迪派门业(生态门)",
           "type":"",
           "standard":"规格：900*2100",
           "describe":""
         },
         {
-          "src":"images/mu1_2.jpg",
+          "src":"images/mu/mumen2_1.jpg",
+          "title":"陶氏门业(双玻璃铝门层)",
+          "type":"",
+          "standard":"规格：800*2100",
+          "describe":""
+        },
+        {
+          "src":"images/mu/mumen2_2.jpg",
+          "title":"陶氏门业(双玻璃铝门层)",
+          "type":"",
+          "standard":"规格：800*2100",
+          "describe":""
+        },
+        {
+          "src":"images/mu/mumen2_3.jpg",
           "title":"陶氏门业(双玻璃铝门层)",
           "type":"",
           "standard":"规格：800*2100",
@@ -133,6 +316,30 @@
           "type":"",
           "standard":"规格：1220*170*80",
           "describe":""
+        },
+        {
+          "muChoose":"",
+          "src":"images/di1_2.jpg",
+          "title":"鸿铭地板",
+          "type":"",
+          "standard":"规格：1220*170*80",
+          "describe":""
+        },
+        {
+          "muChoose":"",
+          "src":"images/di1_3.jpg",
+          "title":"鸿铭地板",
+          "type":"",
+          "standard":"规格：1220*170*80",
+          "describe":""
+        },
+        {
+          "muChoose":"",
+          "src":"images/di1_4.jpg",
+          "title":"鸿铭地板",
+          "type":"",
+          "standard":"规格：1220*170*80",
+          "describe":""
         }
       ]
     },
@@ -141,12 +348,68 @@
       "muName":"卫浴",
       "muDes":"799精致套餐所含浴室柜、蹲便器、水箱、淋浴龙头、水槽以装修时实况而定，以下仅供大体参考^_^！",
       "muList":[
-        {
+		{
           "muChoose":"",
-          "src": "images/wei/wei4_1.jpg",
+          "src": "images/wei/wei4_5.jpg",
           "title": "瑞坤浴室柜",
           "type": "",
-          "standard": "规格：可选",
+          "standard": "",
+          "describe": ""
+        },
+		{
+          "muChoose":"",
+          "src": "images/wei/wei4_6.jpg",
+          "title": "瑞坤浴室柜",
+          "type": "",
+          "standard": "",
+          "describe": ""
+        },
+		{
+          "muChoose":"",
+          "src": "images/wei/wei4_7.jpg",
+          "title": "瑞坤浴室柜",
+          "type": "",
+          "standard": "",
+          "describe": ""
+        },
+		{
+          "muChoose":"",
+          "src": "images/wei/wei4_8.jpg",
+          "title": "瑞坤浴室柜",
+          "type": "",
+          "standard": "",
+          "describe": ""
+        },
+		{
+          "muChoose":"",
+          "src": "images/wei/wei4_9.jpg",
+          "title": "瑞坤浴室柜",
+          "type": "",
+          "standard": "",
+          "describe": ""
+        },
+		{
+          "muChoose":"",
+          "src": "images/wei/wei4_10.jpg",
+          "title": "瑞坤浴室柜",
+          "type": "",
+          "standard": "",
+          "describe": ""
+        },
+		{
+          "muChoose":"",
+          "src": "images/wei/wei4_11.jpg",
+          "title": "瑞坤坐便器",
+          "type": "",
+          "standard": "",
+          "describe": ""
+        },
+		{
+          "muChoose":"",
+          "src": "images/wei/wei4_12.jpg",
+          "title": "瑞坤坐便器",
+          "type": "",
+          "standard": "",
           "describe": ""
         }
       ]
@@ -158,10 +421,42 @@
       "muList":[
         {				
           "muChoose":"",
-          "src":"images/diaoding/1.jpg",
+          "src":"images/diaoding/dengju_1.jpg",
           "title":"辉煌灯具",
           "type":"",
-          "standard":"规格：可选",
+          "standard":"",
+          "describe":""
+        },
+        {				
+          "muChoose":"",
+          "src":"images/diaoding/dengju_2.jpg",
+          "title":"辉煌灯具",
+          "type":"",
+          "standard":"",
+          "describe":""
+        },
+        {				
+          "muChoose":"",
+          "src":"images/diaoding/dengju_3.jpg",
+          "title":"辉煌灯具",
+          "type":"",
+          "standard":"",
+          "describe":""
+        },
+        {				
+          "muChoose":"",
+          "src":"images/diaoding/dengju_4.jpg",
+          "title":"辉煌灯具",
+          "type":"",
+          "standard":"",
+          "describe":""
+        },
+        {				
+          "muChoose":"",
+          "src":"images/diaoding/dengju_5.jpg",
+          "title":"辉煌灯具",
+          "type":"",
+          "standard":"",
           "describe":""
         }
       ]
@@ -173,7 +468,31 @@
       "muList":[
         {
           "muChoose":"",
-          "src":"images/cizhuan/1.jpg",
+          "src":"images/cizhuan/cizhuan_1.jpg",
+          "title":"奢华王子陶瓷",
+          "type":"",
+          "standard":"规格：300*300、300*600、600*600、800*800",
+          "describe":""
+        },
+        {
+          "muChoose":"",
+          "src":"images/cizhuan/cizhuan_2.jpg",
+          "title":"奢华王子陶瓷",
+          "type":"",
+          "standard":"规格：300*300、300*600、600*600、800*800",
+          "describe":""
+        },
+        {
+          "muChoose":"",
+          "src":"images/cizhuan/cizhuan_3.jpg",
+          "title":"奢华王子陶瓷",
+          "type":"",
+          "standard":"规格：300*300、300*600、600*600、800*800",
+          "describe":""
+        },
+        {
+          "muChoose":"",
+          "src":"images/cizhuan/cizhuan_4.jpg",
           "title":"奢华王子陶瓷",
           "type":"",
           "standard":"规格：300*300、300*600、600*600、800*800",
@@ -188,7 +507,23 @@
       "muList":[
         {
           "muChoose":"",
-          "src":"images/chugui/1.jpg",
+          "src":"images/chugui/chugui_1.jpg",
+          "title":"金龙橱柜",
+          "type":"",
+          "standard":"",
+          "describe":""
+        },
+        {
+          "muChoose":"",
+          "src":"images/chugui/chugui_2.jpg",
+          "title":"金龙橱柜",
+          "type":"",
+          "standard":"",
+          "describe":""
+        },
+        {
+          "muChoose":"",
+          "src":"images/chugui/chugui_3.jpg",
           "title":"金龙橱柜",
           "type":"",
           "standard":"",
@@ -206,15 +541,53 @@
       "muList":[
         {
 		  "muChoose":"",
-          "src":"images/mu1_1.jpg",
-          "title":"迪派门业(原木门)",
+          "src":"images/mu/mumen1_1.jpg",
+          "title":"五羊门业(原木门)",
+          "type":"",
+          "standard":"规格：900*2100",
+          "describe":""
+        },
+		{
+		  "muChoose":"",
+          "src":"images/mu/mumen1_2.jpg",
+          "title":"五羊门业(原木门)",
+          "type":"",
+          "standard":"规格：900*2100",
+          "describe":""
+        },
+		{
+		  "muChoose":"",
+          "src":"images/mu/mumen1_3.jpg",
+          "title":"五羊门业(原木门)",
+          "type":"",
+          "standard":"规格：900*2100",
+          "describe":""
+        },
+		{
+		  "muChoose":"",
+          "src":"images/mu/mumen1_4.jpg",
+          "title":"五羊门业(原木门)",
           "type":"",
           "standard":"规格：900*2100",
           "describe":""
         },
         {
-          "src":"images/mu1_2.jpg",
-          "title":"陶氏门业(单套双玻璃铝门层)",
+          "src":"images/mu/mumen2_1.jpg",
+          "title":"陶氏门业(双玻璃铝门层)",
+          "type":"",
+          "standard":"规格：800*2100",
+          "describe":""
+        },
+        {
+          "src":"images/mu/mumen2_2.jpg",
+          "title":"陶氏门业(双玻璃铝门层)",
+          "type":"",
+          "standard":"规格：800*2100",
+          "describe":""
+        },
+        {
+          "src":"images/mu/mumen2_3.jpg",
+          "title":"陶氏门业(双玻璃铝门层)",
           "type":"",
           "standard":"规格：800*2100",
           "describe":""
@@ -249,12 +622,68 @@
       "muName":"卫浴",
       "muDes":"899轻奢套餐所含浴室柜、蹲便器、水箱、淋浴龙头、水槽以装修时实况而定，以下仅供大体参考^_^！",
       "muList":[
-        {
+		{
           "muChoose":"",
-          "src": "images/wei/wei4_1.jpg",
+          "src": "images/wei/wei4_5.jpg",
           "title": "瑞坤浴室柜",
           "type": "",
-          "standard": "规格：可选",
+          "standard": "",
+          "describe": ""
+        },
+		{
+          "muChoose":"",
+          "src": "images/wei/wei4_6.jpg",
+          "title": "瑞坤浴室柜",
+          "type": "",
+          "standard": "",
+          "describe": ""
+        },
+		{
+          "muChoose":"",
+          "src": "images/wei/wei4_7.jpg",
+          "title": "瑞坤浴室柜",
+          "type": "",
+          "standard": "",
+          "describe": ""
+        },
+		{
+          "muChoose":"",
+          "src": "images/wei/wei4_8.jpg",
+          "title": "瑞坤浴室柜",
+          "type": "",
+          "standard": "",
+          "describe": ""
+        },
+		{
+          "muChoose":"",
+          "src": "images/wei/wei4_9.jpg",
+          "title": "瑞坤浴室柜",
+          "type": "",
+          "standard": "",
+          "describe": ""
+        },
+		{
+          "muChoose":"",
+          "src": "images/wei/wei4_10.jpg",
+          "title": "瑞坤浴室柜",
+          "type": "",
+          "standard": "",
+          "describe": ""
+        },
+		{
+          "muChoose":"",
+          "src": "images/wei/wei4_11.jpg",
+          "title": "瑞坤坐便器",
+          "type": "",
+          "standard": "",
+          "describe": ""
+        },
+		{
+          "muChoose":"",
+          "src": "images/wei/wei4_12.jpg",
+          "title": "瑞坤坐便器",
+          "type": "",
+          "standard": "",
           "describe": ""
         }
       ]
@@ -266,10 +695,42 @@
       "muList":[
         {				
           "muChoose":"",
-          "src":"images/diaoding/1.jpg",
+          "src":"images/diaoding/dengju_1.jpg",
           "title":"辉煌灯具",
           "type":"",
-          "standard":"规格：可选",
+          "standard":"",
+          "describe":""
+        },
+        {				
+          "muChoose":"",
+          "src":"images/diaoding/dengju_2.jpg",
+          "title":"辉煌灯具",
+          "type":"",
+          "standard":"",
+          "describe":""
+        },
+        {				
+          "muChoose":"",
+          "src":"images/diaoding/dengju_3.jpg",
+          "title":"辉煌灯具",
+          "type":"",
+          "standard":"",
+          "describe":""
+        },
+        {				
+          "muChoose":"",
+          "src":"images/diaoding/dengju_4.jpg",
+          "title":"辉煌灯具",
+          "type":"",
+          "standard":"",
+          "describe":""
+        },
+        {				
+          "muChoose":"",
+          "src":"images/diaoding/dengju_5.jpg",
+          "title":"辉煌灯具",
+          "type":"",
+          "standard":"",
           "describe":""
         }
       ]
@@ -304,8 +765,24 @@
       "muList":[
         {
           "muChoose":"",
-          "src":"images/chugui/1.jpg",
-          "title":"捷西橱柜",
+          "src":"images/chugui/chugui_1.jpg",
+          "title":"金龙橱柜",
+          "type":"",
+          "standard":"",
+          "describe":""
+        },
+        {
+          "muChoose":"",
+          "src":"images/chugui/chugui_2.jpg",
+          "title":"金龙橱柜",
+          "type":"",
+          "standard":"",
+          "describe":""
+        },
+        {
+          "muChoose":"",
+          "src":"images/chugui/chugui_3.jpg",
+          "title":"金龙橱柜",
           "type":"",
           "standard":"",
           "describe":""
@@ -321,15 +798,56 @@
       "muList":[
         {
 		  "muChoose":"",
-          "src":"images/mu1_1.jpg",
-          "title":"迪派门业(原木门)",
+          "src":"images/mu/mumen1_1.jpg",
+          "title":"五羊门业(原木门)",
+          "type":"",
+          "standard":"规格：900*2100",
+          "describe":""
+        },
+		{
+		  "muChoose":"",
+          "src":"images/mu/mumen1_2.jpg",
+          "title":"五羊门业(原木门)",
+          "type":"",
+          "standard":"规格：900*2100",
+          "describe":""
+        },
+		{
+		  "muChoose":"",
+          "src":"images/mu/mumen1_3.jpg",
+          "title":"五羊门业(原木门)",
+          "type":"",
+          "standard":"规格：900*2100",
+          "describe":""
+        },
+		{
+		  "muChoose":"",
+          "src":"images/mu/mumen1_4.jpg",
+          "title":"五羊门业(原木门)",
           "type":"",
           "standard":"规格：900*2100",
           "describe":""
         },
         {
-          "src":"images/mu1_2.jpg",
-          "title":"陶氏门业(单套双玻璃铝门层)",
+		  "muChoose":"",
+          "src":"images/mu/mumen2_1.jpg",
+          "title":"陶氏门业(双玻璃铝门层)",
+          "type":"",
+          "standard":"规格：800*2100",
+          "describe":""
+        },
+        {
+		  "muChoose":"",
+          "src":"images/mu/mumen2_2.jpg",
+          "title":"陶氏门业(双玻璃铝门层)",
+          "type":"",
+          "standard":"规格：800*2100",
+          "describe":""
+        },
+        {
+		  "muChoose":"",
+          "src":"images/mu/mumen2_3.jpg",
+          "title":"陶氏门业(双玻璃铝门层)",
           "type":"",
           "standard":"规格：800*2100",
           "describe":""
@@ -364,12 +882,68 @@
       "muName":"卫浴",
       "muDes":"1299奢华套餐所含浴室柜、蹲便器、水箱、淋浴龙头、水槽以装修时实况而定，以下仅供大体参考^_^！",
       "muList":[
-        {
+		{
           "muChoose":"",
-          "src": "images/wei/wei4_1.jpg",
+          "src": "images/wei/wei4_5.jpg",
           "title": "瑞坤浴室柜",
           "type": "",
-          "standard": "规格：可选",
+          "standard": "",
+          "describe": ""
+        },
+		{
+          "muChoose":"",
+          "src": "images/wei/wei4_6.jpg",
+          "title": "瑞坤浴室柜",
+          "type": "",
+          "standard": "",
+          "describe": ""
+        },
+		{
+          "muChoose":"",
+          "src": "images/wei/wei4_7.jpg",
+          "title": "瑞坤浴室柜",
+          "type": "",
+          "standard": "",
+          "describe": ""
+        },
+		{
+          "muChoose":"",
+          "src": "images/wei/wei4_8.jpg",
+          "title": "瑞坤浴室柜",
+          "type": "",
+          "standard": "",
+          "describe": ""
+        },
+		{
+          "muChoose":"",
+          "src": "images/wei/wei4_9.jpg",
+          "title": "瑞坤浴室柜",
+          "type": "",
+          "standard": "",
+          "describe": ""
+        },
+		{
+          "muChoose":"",
+          "src": "images/wei/wei4_10.jpg",
+          "title": "瑞坤浴室柜",
+          "type": "",
+          "standard": "",
+          "describe": ""
+        },
+		{
+          "muChoose":"",
+          "src": "images/wei/wei4_11.jpg",
+          "title": "瑞坤坐便器",
+          "type": "",
+          "standard": "",
+          "describe": ""
+        },
+		{
+          "muChoose":"",
+          "src": "images/wei/wei4_12.jpg",
+          "title": "瑞坤坐便器",
+          "type": "",
+          "standard": "",
           "describe": ""
         }
       ]
@@ -381,10 +955,42 @@
       "muList":[
         {				
           "muChoose":"",
-          "src":"images/diaoding/1.jpg",
+          "src":"images/diaoding/dengju_1.jpg",
           "title":"辉煌灯具",
           "type":"",
-          "standard":"规格：可选",
+          "standard":"",
+          "describe":""
+        },
+        {				
+          "muChoose":"",
+          "src":"images/diaoding/dengju_2.jpg",
+          "title":"辉煌灯具",
+          "type":"",
+          "standard":"",
+          "describe":""
+        },
+        {				
+          "muChoose":"",
+          "src":"images/diaoding/dengju_3.jpg",
+          "title":"辉煌灯具",
+          "type":"",
+          "standard":"",
+          "describe":""
+        },
+        {				
+          "muChoose":"",
+          "src":"images/diaoding/dengju_4.jpg",
+          "title":"辉煌灯具",
+          "type":"",
+          "standard":"",
+          "describe":""
+        },
+        {				
+          "muChoose":"",
+          "src":"images/diaoding/dengju_5.jpg",
+          "title":"辉煌灯具",
+          "type":"",
+          "standard":"",
           "describe":""
         }
       ]
@@ -419,8 +1025,24 @@
       "muList":[
         {
           "muChoose":"",
-          "src":"images/chugui/1.jpg",
-          "title":"捷西橱柜",
+          "src":"images/chugui/chugui_1.jpg",
+          "title":"金龙橱柜",
+          "type":"",
+          "standard":"",
+          "describe":""
+        },
+        {
+          "muChoose":"",
+          "src":"images/chugui/chugui_2.jpg",
+          "title":"金龙橱柜",
+          "type":"",
+          "standard":"",
+          "describe":""
+        },
+        {
+          "muChoose":"",
+          "src":"images/chugui/chugui_3.jpg",
+          "title":"金龙橱柜",
           "type":"",
           "standard":"",
           "describe":""
